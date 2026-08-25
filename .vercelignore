@@ -1,0 +1,8 @@
+.openai
+.wrangler
+.next
+dist
+tmp
+app/globals 2.css
+app/page 2.tsx
+site-share-qr.png
