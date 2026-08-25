@@ -48,9 +48,10 @@ const content = {
     aboutBody: ['你好，我是刘力源（Cila），一名数字化营销经理。过去 3 年，我在中国移动北京公司从 0 到 1 搭建企微私域体系，也曾在特斯拉运营百万级社交媒体矩阵、在字节跳动飞书服务 KA 客户。', '我每天关注 AI 与具身智能，也持续学习如何把新技术讲得更准确、更有吸引力。不要自我设限，永远学习，保持好奇心。'],
     socialTitle: '工作之外，我也在记录生活与科技现场。',
     socialStats: ['428 关注者', '5.3 万获赞与收藏'],
-    resume: '下载个人简历',
+    resume: '下载完整个人简历',
+    resumeNote: '教育经历、完整工作经历与技能详情 · PDF · 1 页',
     contactLabel: 'LET’S TALK / 联系我',
-    contactTitle: '如果你也在做有趣的科技产品，欢迎聊聊。',
+    contactTitle: '正在寻找科技与 AI 领域的新媒体运营机会，期待加入一个认真做产品、也认真理解用户的团队。',
     email: '发送邮件',
   },
   en: {
@@ -95,9 +96,10 @@ const content = {
     aboutBody: ['Hi, I’m Liu Liyuan (Cila), a digital marketing manager. Over the past three years, I built China Mobile Beijing’s WeCom ecosystem from scratch. Before that, I ran million-scale social channels at Tesla and supported key accounts at ByteDance Feishu.', 'I follow AI and embodied intelligence every day, always learning how to explain emerging technology with more accuracy and appeal. Stay curious, keep learning, and never self-limit.'],
     socialTitle: 'Outside work, I document life and technology in the field.',
     socialStats: ['428 followers', '53K likes & saves'],
-    resume: 'Download résumé',
+    resume: 'Download full résumé',
+    resumeNote: 'Education, full experience and skills · PDF · 1 page',
     contactLabel: 'LET’S TALK',
-    contactTitle: 'If you’re building an interesting technology product, I’d love to hear about it.',
+    contactTitle: 'I’m exploring content and social media opportunities in tech and AI, and looking for a team that cares equally about its product and its users.',
     email: 'Send an email',
   },
 };
@@ -191,8 +193,15 @@ export default function Home() {
       </section>
 
       <section className="social-section">
-        <div className="social-copy"><p>XIAOHONGSHU / @源饱饱Cila</p><h2>{t.socialTitle}</h2><div>{t.socialStats.map(stat => <span key={stat}>{stat}</span>)}</div><a href="/profile-assets/cila-resume.pdf" download>{t.resume} ↓</a></div>
-        <div className="qr-card"><img src="/profile-assets/xiaohongshu-qr.jpg" alt="小红书账号源饱饱 Cila 的二维码" /><span>SCAN TO FOLLOW ↗</span></div>
+        <div className="social-copy"><p>XIAOHONGSHU / @源饱饱Cila</p><h2>{t.socialTitle}</h2><div>{t.socialStats.map(stat => <span key={stat}>{stat}</span>)}</div></div>
+        <div className="social-aside">
+          <div className="qr-card"><img src="/profile-assets/xiaohongshu-qr.jpg" alt="小红书账号源饱饱 Cila 的二维码" /><span>SCAN TO FOLLOW ↗</span></div>
+          <a className="resume-card" href="/profile-assets/cila-resume.pdf" download>
+            <div className="resume-preview"><img src="/profile-assets/resume-preview.jpg" alt="个人简历首页预览" /></div>
+            <div className="resume-meta"><span>RÉSUMÉ / PDF</span><strong>{t.resume}</strong><p>{t.resumeNote}</p></div>
+            <i aria-hidden="true">↓</i>
+          </a>
+        </div>
       </section>
 
       <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a><div><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
