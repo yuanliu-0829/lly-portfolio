@@ -303,8 +303,11 @@ export default function Home() {
       <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><div className="contact-links"><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a></div><div className="footer-meta"><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
 
       {showWicStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '中国日报英文作品留存节选' : 'Archived China Daily article excerpt'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowWicStory(false)} onClick={() => setShowWicStory(false)}>
-        <div className="story-sheet excerpt-sheet" onClick={(event) => event.stopPropagation()}>
+        <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
           <button className="story-close" type="button" onClick={() => setShowWicStory(false)}>{lang === 'zh' ? '关闭' : 'Close'} ×</button>
+          <p>CHINA DAILY / WORLD INTERNET CONFERENCE · 2021</p>
+          <h2>Digitalization Boosts Development of Cultural, Creative Industry</h2>
+          <span>{lang === 'zh' ? '英文选题与编辑 · 作品集留存节选（原发布页当前无法稳定访问）' : 'English commissioning and editing · archived portfolio excerpt (the original page is currently unavailable)'}</span>
           <div className="story-pages wic-story-pages">
             <div className="wic-page-start"><img src="/profile-assets/wic-story-1.jpg" alt={lang === 'zh' ? '中国日报英文作品正文第一页' : 'First archived page of the China Daily article'} /></div>
             <div className="wic-page-end"><img src="/profile-assets/wic-story-2.jpg" alt={lang === 'zh' ? '中国日报英文作品正文第二页' : 'Second archived page of the China Daily article'} /></div>
@@ -313,8 +316,11 @@ export default function Home() {
       </div>}
 
       {showTeslaStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '大山里的特斯拉村详细内容' : 'Tesla Village full story'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowTeslaStory(false)} onClick={() => setShowTeslaStory(false)}>
-        <div className="story-sheet excerpt-sheet" onClick={(event) => event.stopPropagation()}>
+        <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
           <button className="story-close" type="button" onClick={() => setShowTeslaStory(false)}>{lang === 'zh' ? '关闭' : 'Close'} ×</button>
+          <p>TESLA / TSPACE · 2022</p>
+          <h2>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h2>
+          <span>{lang === 'zh' ? '车主采访、品牌故事撰写 · 原作品集全文' : 'Owner interview and brand storytelling · full portfolio excerpt'}</span>
           <div className="story-pages">
             <div className="story-page-crop"><img src="/profile-assets/tesla-story-1.jpg" alt={lang === 'zh' ? '特斯拉村故事原文开篇' : 'Opening of the Tesla Village story'} /></div>
             {[2, 3].map(page => <img key={page} src={`/profile-assets/tesla-story-${page}.jpg`} alt={`${lang === 'zh' ? '特斯拉村故事原文第' : 'Tesla Village story page '}${page}${lang === 'zh' ? '页' : ''}`} />)}
