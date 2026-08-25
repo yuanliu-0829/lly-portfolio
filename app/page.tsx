@@ -11,8 +11,8 @@ const content = {
     role: '数字化营销经理 · 科技与 AI 新媒体运营',
     title: ['用真诚做内容，', '用数据看效果。'],
     intro: '我把复杂的技术讲简单，把内容、用户与增长连接起来。3 年私域增长与内容营销经验，正在向半导体、AI 与具身智能行业持续探索。',
-    location: '北京 · 开放新机会',
-    cta: '查看我的工作',
+    location: '北京 · 寻找新机会',
+    cta: '了解我的工作经历',
     proof: [['360万', '有效私域用户'], ['−60%', '人工咨询量'], ['+430%', '客单价提升']],
     featured: 'FEATURED CASE / 代表案例',
     caseTitle: '从 0 到 1，搭建企微私域增长系统',
@@ -27,9 +27,9 @@ const content = {
     workEyebrow: 'SELECTED WORK / 作品精选',
     workTitle: '我如何把策略变成结果',
     projects: [
-      ['把增长做成系统，而不是一次活动', 'METHOD 01 / 增长系统化', '先统一有效用户口径，再打通入口、标签、触达、服务和复盘，让每次增长动作都能进入同一套运营闭环。', '入口盘点 → 用户分层 → 触达脚本 → 服务承接 → 数据复盘', '可迁移到会员、社群、产品用户与私域运营。'],
-      ['把复杂技术翻译成用户愿意理解的内容', 'METHOD 02 / 技术内容翻译', '先理解产品机制和技术事实，再寻找用户问题与人物故事；同一信息根据公众号、短视频和海外内容重新组织表达。', '技术拆解 → 用户洞察 → 叙事切口 → 渠道适配 → 内容复盘', '可迁移到 AI、半导体、机器人及其他技术行业。'],
-      ['用节奏与接口，推动复杂项目落地', 'METHOD 03 / 项目交付', '把目标拆成关键节点、责任人与交付物，用风险清单和固定复盘节奏串联政策、页面、内容、物流、客服与传播资源。', '目标拆解 → 责任对齐 → 节点管理 → 风险预案 → 结果复盘', '可迁移到市场活动、产品上线和跨部门专项。'],
+      ['把增长做成系统，而不是一次活动', 'METHOD 01 / 增长系统化', '先统一有效用户口径，再打通入口、标签、触达、服务和复盘，让每次增长动作都能进入同一套运营闭环。', '入口盘点 → 用户分层 → 触达脚本 → 服务承接 → 数据复盘'],
+      ['把复杂技术翻译成用户愿意理解的内容', 'METHOD 02 / 技术内容翻译', '先理解产品机制和技术事实，再寻找用户问题与人物故事；同一信息根据公众号、短视频和海外内容重新组织表达。', '技术拆解 → 用户洞察 → 叙事切口 → 渠道适配 → 内容复盘'],
+      ['用节奏与接口，推动复杂项目落地', 'METHOD 03 / 项目交付', '把目标拆成关键节点、责任人与交付物，用风险清单和固定复盘节奏串联政策、页面、内容、物流、客服与传播资源。', '目标拆解 → 责任对齐 → 节点管理 → 风险预案 → 结果复盘'],
     ],
     abilitiesEyebrow: 'CAPABILITIES / 核心能力',
     abilitiesTitle: '内容是入口，增长是结果',
@@ -62,15 +62,14 @@ const content = {
     contactLabel: 'LET’S TALK / 联系我',
     contactTitle: '正在寻找科技与 AI 领域的新媒体运营机会，期待加入一个认真做产品、也认真理解用户的团队。',
     email: '发送邮件',
-    phone: '拨打电话',
   },
   en: {
     nav: ['About', 'Cases', 'Work', 'Skills', 'Contact'],
     role: 'Digital Marketing Manager · Tech & AI Content',
     title: ['Content with sincerity.', 'Growth with evidence.'],
     intro: 'I translate complex technology into stories people understand, connecting content, audiences and measurable growth. Three years in private-domain growth and content marketing, now exploring semiconductors, AI and embodied intelligence.',
-    location: 'Beijing · Open to opportunities',
-    cta: 'Explore my work',
+    location: 'Beijing · Seeking new opportunities',
+    cta: 'Explore my experience',
     proof: [['3.6M', 'private-domain users'], ['−60%', 'manual inquiries'], ['+430%', 'average order value']],
     featured: 'FEATURED CASE',
     caseTitle: 'Building a WeCom growth system from zero to one',
@@ -85,9 +84,9 @@ const content = {
     workEyebrow: 'SELECTED WORK',
     workTitle: 'Turning strategy into outcomes',
     projects: [
-      ['Build growth as a system, not a one-off campaign', 'METHOD 01 / GROWTH SYSTEM', 'Define the valid-user metric first, then connect acquisition, tagging, messaging, service and review into one repeatable operating loop.', 'Channel audit → segmentation → scripts → service → review', 'Transferable to membership, community, product-user and private-domain operations.'],
-      ['Translate complex technology into stories people choose to understand', 'METHOD 02 / TECH TRANSLATION', 'Start with the product mechanism and technical truth, then find the user problem and human story; reshape the same facts for articles, video and global channels.', 'Technical analysis → audience insight → narrative angle → channel adaptation → review', 'Transferable to AI, semiconductors, robotics and other technical industries.'],
-      ['Use cadence and interfaces to deliver complex programs', 'METHOD 03 / PROGRAM DELIVERY', 'Break goals into milestones, owners and deliverables; connect policy, pages, content, logistics, service and distribution through risk lists and fixed review rhythms.', 'Goal breakdown → ownership → milestones → risk plan → review', 'Transferable to campaigns, product launches and cross-functional initiatives.'],
+      ['Build growth as a system, not a one-off campaign', 'METHOD 01 / GROWTH SYSTEM', 'Define the valid-user metric first, then connect acquisition, tagging, messaging, service and review into one repeatable operating loop.', 'Channel audit → segmentation → scripts → service → review'],
+      ['Translate complex technology into stories people choose to understand', 'METHOD 02 / TECH TRANSLATION', 'Start with the product mechanism and technical truth, then find the user problem and human story; reshape the same facts for articles, video and global channels.', 'Technical analysis → audience insight → narrative angle → channel adaptation → review'],
+      ['Use cadence and interfaces to deliver complex programs', 'METHOD 03 / PROGRAM DELIVERY', 'Break goals into milestones, owners and deliverables; connect policy, pages, content, logistics, service and distribution through risk lists and fixed review rhythms.', 'Goal breakdown → ownership → milestones → risk plan → review'],
     ],
     abilitiesEyebrow: 'CAPABILITIES',
     abilitiesTitle: 'Content is the entry. Growth is the outcome.',
@@ -120,7 +119,6 @@ const content = {
     contactLabel: 'LET’S TALK',
     contactTitle: 'I’m exploring content and social media opportunities in tech and AI, and looking for a team that cares equally about its product and its users.',
     email: 'Send an email',
-    phone: 'Call me',
   },
 };
 
@@ -130,17 +128,17 @@ const projectImages = ['/profile-assets/method-growth-system.png', '/profile-ass
 const growthData = [
   { period: '2023 Q3', total: 998374, added: null, retention: null, eventZh: '盘点存量企微用户，明确累计有效用户口径，建立增长基线。', eventEn: 'Audited existing WeCom users, defined the valid-user metric and established the baseline.' },
   { period: '2023 Q4', total: 1008373, added: 9999, retention: null, eventZh: '持续推进分公司企微日常运营，验证规模化用户沉淀路径。', eventEn: 'Continued branch-level operations and validated the path to scalable user accumulation.' },
-  { period: '2024 Q1', total: 1047463, added: 39090, retention: null, eventZh: '梳理并优化各分公司账号运营；搭建产品营销话术、模板，并定期培训运营人员。', eventEn: 'Optimized branch accounts, built product scripts and templates, and trained operators regularly.' },
+  { period: '2024 Q1', total: 1047463, added: 39090, retention: null, keyEvent: true, eventZh: '梳理并优化各分公司账号运营；搭建产品营销话术、模板，并定期培训运营人员。', eventEn: 'Optimized branch accounts, built product scripts and templates, and trained operators regularly.' },
   { period: '2024 Q2', total: 1063453, added: 15990, retention: null, eventZh: '将话术模板与培训机制投入常态运营，推动分公司执行标准落地。', eventEn: 'Embedded scripts and training into routine operations and standardized branch execution.' },
   { period: '2024 Q3', total: 1083726, added: 20273, retention: null, eventZh: '围绕既有获客入口持续运营，优化用户承接与服务流程。', eventEn: 'Sustained acquisition channels while refining user onboarding and service flows.' },
   { period: '2024 Q4', total: 1134087, added: 50361, retention: null, eventZh: '复盘增长节奏与用户需求，为服务导向的运营策略调整做准备。', eventEn: 'Reviewed growth and user needs to prepare for a service-led operating strategy.' },
   { period: '2025 Q1', total: 1203840, added: 69753, retention: null, eventZh: '持续扩充有效用户并梳理服务场景，为托管平台上线积累需求。', eventEn: 'Expanded valid users and mapped service scenarios ahead of the managed platform launch.' },
-  { period: '2025 Q2', total: 1324734, added: 120894, retention: null, eventZh: '将运营目标调整为客户服务；上线运营托管平台，提高集中运营效率。', eventEn: 'Shifted the objective toward service and launched a managed platform for centralized operations.' },
+  { period: '2025 Q2', total: 1324734, added: 120894, retention: null, keyEvent: true, eventZh: '将运营目标调整为客户服务；上线运营托管平台，提高集中运营效率。', eventEn: 'Shifted the objective toward service and launched a managed platform for centralized operations.' },
   { period: '2025 Q3', total: 1488208, added: 163474, retention: null, eventZh: '依托托管平台推进集中化运营，新增用户规模进一步加速。', eventEn: 'Scaled centralized operations through the managed platform, accelerating user growth.' },
-  { period: '2025 Q4', total: 1826533, added: 338325, retention: null, eventZh: '开发上线企业微信智能获客码；全面梳理并完善客户标签体系。', eventEn: 'Launched smart acquisition codes and comprehensively rebuilt the customer-tag system.' },
-  { period: '2026 Q1', total: 2367149, added: 540616, retention: 43, eventZh: '制定企微运营规范；在内外部全渠道部署获客点位；搭建企微自有小程序。', eventEn: 'Set operating standards, deployed acquisition points across internal and external channels, and built a dedicated mini program.' },
-  { period: '2026 Q2', total: 2967570, added: 600421, retention: 57, eventZh: '上线 AI 会话质检与 AI 智能体；搭建客户全生命周期 SOP；组建集中运营团队。', eventEn: 'Launched AI conversation QA and agents, built lifecycle SOPs, and formed a centralized team.' },
-  { period: '2026-08-25', total: 3597487, added: 629917, retention: 62, eventZh: '在线下校园迎新中嵌入添加企微流程；开发更多获客活动，最高 30 天留存率达到 62%。', eventEn: 'Embedded WeCom acquisition into campus orientation and expanded acquisition campaigns, reaching 62% peak 30-day retention.' },
+  { period: '2025 Q4', total: 1826533, added: 338325, retention: null, keyEvent: true, eventZh: '开发上线企业微信智能获客码；全面梳理并完善客户标签体系。', eventEn: 'Launched smart acquisition codes and comprehensively rebuilt the customer-tag system.' },
+  { period: '2026 Q1', total: 2367149, added: 540616, retention: 43, keyEvent: true, eventZh: '制定企微运营规范；在内外部全渠道部署获客点位；搭建企微自有小程序。', eventEn: 'Set operating standards, deployed acquisition points across internal and external channels, and built a dedicated mini program.' },
+  { period: '2026 Q2', total: 2967570, added: 600421, retention: 57, keyEvent: true, eventZh: '上线 AI 会话质检与 AI 智能体；搭建客户全生命周期 SOP；组建集中运营团队。', eventEn: 'Launched AI conversation QA and agents, built lifecycle SOPs, and formed a centralized team.' },
+  { period: '2026-08-25', total: 3597487, added: 629917, retention: 62, keyEvent: true, eventZh: '在线下校园迎新中嵌入添加企微流程；开发更多获客活动，最高 30 天留存率达到 62%。', eventEn: 'Embedded WeCom acquisition into campus orientation and expanded acquisition campaigns, reaching 62% peak 30-day retention.' },
 ];
 
 function GrowthTrend({ lang }: { lang: Language }) {
@@ -159,10 +157,11 @@ function GrowthTrend({ lang }: { lang: Language }) {
             <line x1="0" y1="14" x2="100" y2="14" /><line x1="0" y1="53" x2="100" y2="53" /><line x1="0" y1="92" x2="100" y2="92" />
             <polyline points={polyline} />
           </svg>
-          {coords.map(({ x, y }, index) => <button key={growthData[index].period} style={{ left: `${x}%`, top: `${y}%` }} className={selected === index ? 'active' : growthData[index].eventZh ? 'event' : ''} onClick={() => setSelected(index)} aria-label={`${growthData[index].period}: ${format(growthData[index].total)}`} />)}
+          {coords.map(({ x, y }, index) => <button key={growthData[index].period} style={{ left: `${x}%`, top: `${y}%` }} className={`${selected === index ? 'active ' : ''}${growthData[index].keyEvent ? 'key-event' : ''}`.trim()} onClick={() => setSelected(index)} aria-label={`${growthData[index].period}: ${format(growthData[index].total)}`} />)}
           <div className="trend-xlabels"><span>2023 Q3</span><span>2025 Q1</span><span>2026 Q1</span><span>08.25</span></div>
         </div>
       </div>
+      <p className="trend-hint">↗ {lang === 'zh' ? '点击曲线节点，了解各阶段数据与运营动作' : 'Select a point to explore the data and operational action'}</p>
       <div className="trend-detail">
         <span>{point.period} · {selected === growthData.length - 1 ? (lang === 'zh' ? '截至当日实际值' : 'actual as of this date') : (lang === 'zh' ? '季度末' : 'quarter end')}</span>
         <strong>{format(point.total)}</strong>
@@ -255,7 +254,7 @@ export default function Home() {
 
       <section className="projects-section">
         <div className="project-heading"><p>{t.workEyebrow}</p><h2>{t.workTitle}</h2></div>
-        <div className="projects-grid">{t.projects.map((project, index) => <article className="project-card" key={project[0]}><div className="project-image"><img src={projectImages[index]} alt="" /><span>0{index + 1}</span></div><p>{project[1]}</p><h3>{project[0]}</h3><p className="project-summary">{project[2]}</p><strong className="project-process">{project[3]}</strong><div className="project-foot"><p>{project[4]}</p><i>↗</i></div></article>)}</div>
+        <div className="projects-grid">{t.projects.map((project, index) => <article className="project-card" key={project[0]}><div className="project-image"><img src={projectImages[index]} alt="" /><span>0{index + 1}</span></div><p>{project[1]}</p><h3>{project[0]}</h3><p className="project-summary">{project[2]}</p><strong className="project-process">{project[3]}</strong></article>)}</div>
       </section>
 
       <section className="writing-section" id="writing">
@@ -301,14 +300,11 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><div className="contact-links"><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a><a href="tel:+8613810504936"><span>{t.phone}</span>138 1050 4936 ↗</a></div><div className="footer-meta"><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
+      <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><div className="contact-links"><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a></div><div className="footer-meta"><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
 
       {showWicStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '中国日报英文作品留存节选' : 'Archived China Daily article excerpt'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowWicStory(false)} onClick={() => setShowWicStory(false)}>
-        <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
+        <div className="story-sheet excerpt-sheet" onClick={(event) => event.stopPropagation()}>
           <button className="story-close" type="button" onClick={() => setShowWicStory(false)}>{lang === 'zh' ? '关闭' : 'Close'} ×</button>
-          <p>CHINA DAILY / WORLD INTERNET CONFERENCE · 2021</p>
-          <h2>Digitalization Boosts Development of Cultural, Creative Industry</h2>
-          <span>{lang === 'zh' ? '英文选题与编辑 · 作品集留存节选（原发布页当前无法稳定访问）' : 'English commissioning and editing · archived portfolio excerpt (the original page is currently unavailable)'}</span>
           <div className="story-pages wic-story-pages">
             <div className="wic-page-start"><img src="/profile-assets/wic-story-1.jpg" alt={lang === 'zh' ? '中国日报英文作品正文第一页' : 'First archived page of the China Daily article'} /></div>
             <div className="wic-page-end"><img src="/profile-assets/wic-story-2.jpg" alt={lang === 'zh' ? '中国日报英文作品正文第二页' : 'Second archived page of the China Daily article'} /></div>
@@ -317,11 +313,8 @@ export default function Home() {
       </div>}
 
       {showTeslaStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '大山里的特斯拉村详细内容' : 'Tesla Village full story'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowTeslaStory(false)} onClick={() => setShowTeslaStory(false)}>
-        <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
+        <div className="story-sheet excerpt-sheet" onClick={(event) => event.stopPropagation()}>
           <button className="story-close" type="button" onClick={() => setShowTeslaStory(false)}>{lang === 'zh' ? '关闭' : 'Close'} ×</button>
-          <p>TESLA / TSPACE · 2022</p>
-          <h2>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h2>
-          <span>{lang === 'zh' ? '车主采访、品牌故事撰写 · 原作品集全文' : 'Owner interview and brand storytelling · full portfolio excerpt'}</span>
           <div className="story-pages">
             <div className="story-page-crop"><img src="/profile-assets/tesla-story-1.jpg" alt={lang === 'zh' ? '特斯拉村故事原文开篇' : 'Opening of the Tesla Village story'} /></div>
             {[2, 3].map(page => <img key={page} src={`/profile-assets/tesla-story-${page}.jpg`} alt={`${lang === 'zh' ? '特斯拉村故事原文第' : 'Tesla Village story page '}${page}${lang === 'zh' ? '页' : ''}`} />)}
