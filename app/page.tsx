@@ -7,7 +7,7 @@ type CaseTab = 'scale' | 'conversion' | 'efficiency' | 'reach';
 
 const content = {
   zh: {
-    nav: ['关于', '案例', '能力', '联系'],
+    nav: ['关于我', '案例', '作品', '能力', '联系'],
     role: '数字化营销经理 · 科技与 AI 新媒体运营',
     title: ['用真诚做内容，', '用数据看效果。'],
     intro: '我把复杂的技术讲简单，把内容、用户与增长连接起来。3 年私域增长与内容营销经验，正在向半导体、AI 与具身智能行业持续探索。',
@@ -17,12 +17,12 @@ const content = {
     featured: 'FEATURED CASE / 代表案例',
     caseTitle: '从 0 到 1，搭建企微私域增长系统',
     caseLead: '在中国移动北京公司打通 APP、小程序、公众号等 5 大获客入口，搭建覆盖拉新、转化、服务与质检的全链路运营体系。',
-    caseLabels: ['用户规模', '转化增长', '运营效率', '项目覆盖'],
+    caseLabels: ['用户规模', '转化增长', 'AI 运营', '大型项目'],
     caseNotes: {
-      scale: ['有效用户体系', '从 0 搭建全链路企微私域体系', '5 大获客入口 · 30 天留存率 42%'],
-      conversion: ['客单价提升 430%', '从 1.5 元增长至 8 元', '精准客群推送转化率达到 5%'],
-      efficiency: ['AI 重构服务效率', '人工咨询量下降 60%', '质检覆盖率 15% → 100% · 回复时长 43 → 15 分钟'],
-      reach: ['大型项目统筹', '校园迎新覆盖 90 所高校', '触达 16 万新生 · 年均线上销量 1.3 万张'],
+      scale: ['有效用户体系', '从 0 搭建全链路企微私域体系', '5 大获客入口 · 最高 30 天留存率 62%'],
+      conversion: ['把流量转成业务结果', '客单价从 1.5 元增长至 8 元', '精准推送、活动运营与成本控制共同驱动转化'],
+      efficiency: ['AI 重构服务效率', '从自动应答到会话质检的运营闭环', '减少重复咨询，同时提高服务覆盖与执行质量'],
+      reach: ['大型项目统筹', '把跨部门协作转成可量化交付', '覆盖高校迎新与 KOL 整合营销两类复杂项目'],
     },
     workEyebrow: 'SELECTED WORK / 作品精选',
     workTitle: '我如何把策略变成结果',
@@ -40,16 +40,16 @@ const content = {
     writingDesc: ['发表于世界互联网大会海外官网，讨论数字化如何推动文化创意产业发展。', '以云南攀枝戛村为现场，记录新能源科技、乡村发展与人的真实连接。', '深入带逛 2026 世界机器人大会，把复杂的前沿技术转化为现场化、可理解的视频内容。'],
     readOriginal: '阅读英文原文 ↗',
     watchVideo: '前往小红书观看 ↗',
-    portfolioExcerpt: '作品集节选',
+    portfolioExcerpt: '查看详细内容 ↗',
     abilities: [
-      ['科技内容策划', '把复杂功能与行业概念翻译成清晰、有传播力的内容。'],
-      ['私域体系搭建', '从获客入口到留存、转化与服务的完整运营闭环。'],
-      ['AI 运营实战', '把智能回复、质检与内容工作流嵌入实际业务。'],
-      ['短视频全链路', '独立完成策划、脚本、拍摄、剪辑与封面设计。'],
-      ['数据复盘增长', '围绕转化、客单价与获客成本持续优化策略。'],
-      ['KOL 整合传播', '连接公域声量与私域沉淀，统筹传播矩阵。'],
-      ['跨部门项目统筹', '协调产品、销售、物料、物流与客服完成复杂项目。'],
-      ['英文内容能力', '英语专业八级，可支持海外行业研究与内容运营。'],
+      ['科技内容策划', '例如：运营特斯拉百万级双微一抖矩阵，月均产出 30+ 篇文案、篇均阅读 1 万+；“大山里的特斯拉村”获点赞 2 万+。'],
+      ['私域体系搭建', '例如：打通 APP、小程序、公众号等 5 大获客入口，累计沉淀 359.7 万有效用户，最高 30 天留存率 62%。'],
+      ['AI 运营实战', '例如：上线 7×24 小时智能应答与 AI 会话质检，使人工咨询量下降 60%，质检覆盖率从 15% 提升至 100%。'],
+      ['短视频全链路', '例如：独立完成世界机器人大会视频的选题、脚本、出镜、拍摄、剪辑与封面，单人闭环产出科技现场内容。'],
+      ['数据复盘增长', '例如：将客单价从 1.5 元提升至 8 元、精准推送转化率做到 5%，并把演唱会裂变获客成本控制在 4 元/人。'],
+      ['KOL 整合传播', '例如：联动 20 位校园 KOL 搭建传播矩阵，获得 36 万+ 转评赞，沉淀 5000+ 精准企微用户。'],
+      ['跨部门项目统筹', '例如：统筹近 90 所高校迎新项目，协调政策、页面、物料、物流与客服，触达 16 万+ 新生。'],
+      ['英文内容能力', '例如：英语专业八级，曾为中国日报负责英文选题与编辑，作品发表于世界互联网大会海外官网。'],
     ],
     aboutEyebrow: 'ABOUT CILA / 关于我',
     aboutTitle: '好的技术，值得被更多人看见。',
@@ -63,7 +63,7 @@ const content = {
     email: '发送邮件',
   },
   en: {
-    nav: ['About', 'Cases', 'Skills', 'Contact'],
+    nav: ['About', 'Cases', 'Work', 'Skills', 'Contact'],
     role: 'Digital Marketing Manager · Tech & AI Content',
     title: ['Content with sincerity.', 'Growth with evidence.'],
     intro: 'I translate complex technology into stories people understand, connecting content, audiences and measurable growth. Three years in private-domain growth and content marketing, now exploring semiconductors, AI and embodied intelligence.',
@@ -73,12 +73,12 @@ const content = {
     featured: 'FEATURED CASE',
     caseTitle: 'Building a WeCom growth system from zero to one',
     caseLead: 'At China Mobile Beijing, I connected five acquisition channels and built an end-to-end operating system spanning acquisition, conversion, service and quality assurance.',
-    caseLabels: ['User scale', 'Conversion', 'Efficiency', 'Reach'],
+    caseLabels: ['User scale', 'Conversion', 'AI operations', 'Programs'],
     caseNotes: {
-      scale: ['3.6M valid users', 'An end-to-end WeCom system built from zero', '5 acquisition channels · 42% 30-day retention'],
-      conversion: ['Average order value +430%', 'From RMB 1.5 to RMB 8', '5% conversion on targeted audience pushes'],
-      efficiency: ['AI-powered service operations', '60% fewer manual inquiries', 'QA coverage 15% → 100% · Reply time 43 → 15 min'],
-      reach: ['Large-scale program delivery', 'Orientation program across 90 universities', '160K students reached · 13K annual online sales'],
+      scale: ['3.6M valid users', 'An end-to-end WeCom system built from zero', '5 acquisition channels · peak 30-day retention of 62%'],
+      conversion: ['Turning traffic into outcomes', 'Average order value grew from RMB 1.5 to RMB 8', 'Targeted messaging, campaign design and cost control worked together'],
+      efficiency: ['AI-powered service operations', 'From automated replies to conversation QA', 'Reducing repetitive work while improving coverage and execution'],
+      reach: ['Large-scale program delivery', 'Making cross-functional delivery measurable', 'University orientation and KOL campaigns at scale'],
     },
     workEyebrow: 'SELECTED WORK',
     workTitle: 'Turning strategy into outcomes',
@@ -96,16 +96,16 @@ const content = {
     writingDesc: ['Published on the World Internet Conference international site, exploring how digitalization advances cultural and creative industries.', 'A field story from Panzhiga Village, connecting clean technology, rural development and lived experience.', 'An in-depth tour of the 2026 World Robot Conference, translating frontier technologies into accessible field reporting.'],
     readOriginal: 'Read the article ↗',
     watchVideo: 'Watch on Xiaohongshu ↗',
-    portfolioExcerpt: 'Portfolio excerpt',
+    portfolioExcerpt: 'View full story ↗',
     abilities: [
-      ['Tech content strategy', 'Translate complex products and concepts into clear, engaging stories.'],
-      ['Private-domain systems', 'Build complete loops from acquisition to retention, conversion and service.'],
-      ['Applied AI operations', 'Embed AI replies, quality assurance and content workflows into real operations.'],
-      ['End-to-end video', 'Own planning, scripts, filming, editing and cover design.'],
-      ['Data-led optimization', 'Improve strategy through conversion, AOV and acquisition-cost evidence.'],
-      ['KOL campaigns', 'Connect public reach with private conversion through creator networks.'],
-      ['Cross-functional delivery', 'Coordinate product, sales, creative, logistics and service teams.'],
-      ['English content', 'TEM-8 certified; ready for global research and content operations.'],
+      ['Tech content strategy', 'Example: ran Tesla’s million-scale social matrix, producing 30+ pieces monthly with 10K+ average reads; one owner story earned 20K+ likes.'],
+      ['Private-domain systems', 'Example: connected five acquisition channels and grew the system to 3.597M valid users with peak 30-day retention of 62%.'],
+      ['Applied AI operations', 'Example: launched 24/7 AI replies and conversation QA, cutting manual inquiries by 60% and expanding QA coverage from 15% to 100%.'],
+      ['End-to-end video', 'Example: independently planned, presented, filmed, edited and packaged an on-site World Robot Conference video.'],
+      ['Data-led optimization', 'Example: raised AOV from RMB 1.5 to RMB 8, achieved 5% targeted-push conversion and held campaign CAC to RMB 4.'],
+      ['KOL campaigns', 'Example: coordinated 20 campus KOLs, generating 360K+ engagements and converting 5,000+ qualified WeCom users.'],
+      ['Cross-functional delivery', 'Example: led orientation delivery across nearly 90 universities, coordinating policy, pages, assets, logistics and service for 160K+ students.'],
+      ['English content', 'Example: TEM-8 certified; commissioned and edited English reporting published by the World Internet Conference international site.'],
     ],
     aboutEyebrow: 'ABOUT CILA',
     aboutTitle: 'Good technology deserves to be seen.',
@@ -124,19 +124,19 @@ const tabKeys: CaseTab[] = ['scale', 'conversion', 'efficiency', 'reach'];
 const projectImages = ['/profile-assets/wecom-growth.png', '/profile-assets/robot-story.png', '/profile-assets/content-network.png'];
 
 const growthData = [
-  { period: '2023 Q3', total: 998374, added: null, retention: null, eventZh: '', eventEn: '' },
-  { period: '2023 Q4', total: 1008373, added: 9999, retention: null, eventZh: '', eventEn: '' },
-  { period: '2024 Q1', total: 1047463, added: 39090, retention: null, eventZh: '优化分公司运营，搭建营销话术与培训体系', eventEn: 'Optimized branch operations and built scripts and training' },
-  { period: '2024 Q2', total: 1063453, added: 15990, retention: null, eventZh: '', eventEn: '' },
-  { period: '2024 Q3', total: 1083726, added: 20273, retention: null, eventZh: '', eventEn: '' },
-  { period: '2024 Q4', total: 1134087, added: 50361, retention: null, eventZh: '', eventEn: '' },
-  { period: '2025 Q1', total: 1203840, added: 69753, retention: null, eventZh: '', eventEn: '' },
-  { period: '2025 Q2', total: 1324734, added: 120894, retention: null, eventZh: '策略转向客户服务，上线运营托管平台', eventEn: 'Shifted to customer service and launched managed operations' },
-  { period: '2025 Q3', total: 1488208, added: 163474, retention: null, eventZh: '', eventEn: '' },
-  { period: '2025 Q4', total: 1826533, added: 338325, retention: null, eventZh: '上线智能获客码，完善客户标签体系', eventEn: 'Launched smart acquisition codes and rebuilt customer tags' },
-  { period: '2026 Q1', total: 2367149, added: 540616, retention: 43, eventZh: '全渠道部署获客点位，制定运营规范', eventEn: 'Deployed omnichannel acquisition points and operating standards' },
-  { period: '2026 Q2', total: 2967570, added: 600421, retention: 57, eventZh: '上线 AI 质检、AI 智能体与全生命周期 SOP', eventEn: 'Launched AI QA, AI agents and lifecycle SOPs' },
-  { period: '2026-08-25', total: 3597487, added: 629917, retention: 62, eventZh: '校园迎新嵌入企微获客流程，丰富获客活动', eventEn: 'Embedded WeCom acquisition into campus orientation' },
+  { period: '2023 Q3', total: 998374, added: null, retention: null, eventZh: '盘点存量企微用户，明确累计有效用户口径，建立增长基线。', eventEn: 'Audited existing WeCom users, defined the valid-user metric and established the baseline.' },
+  { period: '2023 Q4', total: 1008373, added: 9999, retention: null, eventZh: '持续推进分公司企微日常运营，验证规模化用户沉淀路径。', eventEn: 'Continued branch-level operations and validated the path to scalable user accumulation.' },
+  { period: '2024 Q1', total: 1047463, added: 39090, retention: null, eventZh: '梳理并优化各分公司账号运营；搭建产品营销话术、模板，并定期培训运营人员。', eventEn: 'Optimized branch accounts, built product scripts and templates, and trained operators regularly.' },
+  { period: '2024 Q2', total: 1063453, added: 15990, retention: null, eventZh: '将话术模板与培训机制投入常态运营，推动分公司执行标准落地。', eventEn: 'Embedded scripts and training into routine operations and standardized branch execution.' },
+  { period: '2024 Q3', total: 1083726, added: 20273, retention: null, eventZh: '围绕既有获客入口持续运营，优化用户承接与服务流程。', eventEn: 'Sustained acquisition channels while refining user onboarding and service flows.' },
+  { period: '2024 Q4', total: 1134087, added: 50361, retention: null, eventZh: '复盘增长节奏与用户需求，为服务导向的运营策略调整做准备。', eventEn: 'Reviewed growth and user needs to prepare for a service-led operating strategy.' },
+  { period: '2025 Q1', total: 1203840, added: 69753, retention: null, eventZh: '持续扩充有效用户并梳理服务场景，为托管平台上线积累需求。', eventEn: 'Expanded valid users and mapped service scenarios ahead of the managed platform launch.' },
+  { period: '2025 Q2', total: 1324734, added: 120894, retention: null, eventZh: '将运营目标调整为客户服务；上线运营托管平台，提高集中运营效率。', eventEn: 'Shifted the objective toward service and launched a managed platform for centralized operations.' },
+  { period: '2025 Q3', total: 1488208, added: 163474, retention: null, eventZh: '依托托管平台推进集中化运营，新增用户规模进一步加速。', eventEn: 'Scaled centralized operations through the managed platform, accelerating user growth.' },
+  { period: '2025 Q4', total: 1826533, added: 338325, retention: null, eventZh: '开发上线企业微信智能获客码；全面梳理并完善客户标签体系。', eventEn: 'Launched smart acquisition codes and comprehensively rebuilt the customer-tag system.' },
+  { period: '2026 Q1', total: 2367149, added: 540616, retention: 43, eventZh: '制定企微运营规范；在内外部全渠道部署获客点位；搭建企微自有小程序。', eventEn: 'Set operating standards, deployed acquisition points across internal and external channels, and built a dedicated mini program.' },
+  { period: '2026 Q2', total: 2967570, added: 600421, retention: 57, eventZh: '上线 AI 会话质检与 AI 智能体；搭建客户全生命周期 SOP；组建集中运营团队。', eventEn: 'Launched AI conversation QA and agents, built lifecycle SOPs, and formed a centralized team.' },
+  { period: '2026-08-25', total: 3597487, added: 629917, retention: 62, eventZh: '在线下校园迎新中嵌入添加企微流程；开发更多获客活动，最高 30 天留存率达到 62%。', eventEn: 'Embedded WeCom acquisition into campus orientation and expanded acquisition campaigns, reaching 62% peak 30-day retention.' },
 ];
 
 function GrowthTrend({ lang }: { lang: Language }) {
@@ -172,24 +172,41 @@ function GrowthTrend({ lang }: { lang: Language }) {
 function CaseVisual({ tab, lang }: { tab: CaseTab; lang: Language }) {
   if (tab === 'scale') return <GrowthTrend lang={lang} />;
   if (tab === 'conversion') return (
-    <div className="comparison-visual visual-panel">
-      <div className="compare-row"><span>{lang === 'zh' ? '优化前' : 'BEFORE'}</span><i style={{ width: '18.75%' }} /><b>¥1.5</b></div>
-      <div className="compare-row active"><span>{lang === 'zh' ? '优化后' : 'AFTER'}</span><i style={{ width: '100%' }} /><b>¥8</b></div>
-      <div className="delta-pill">+430% AOV</div>
+    <div className="metric-visual visual-panel">
+      {[
+        ['¥1.5 → ¥8', lang === 'zh' ? '客单价' : 'AVERAGE ORDER VALUE'],
+        ['+430%', lang === 'zh' ? '客单价增幅' : 'AOV UPLIFT'],
+        ['5%', lang === 'zh' ? '精准推送转化率' : 'TARGETED PUSH CVR'],
+        ['7 类 / 10 系列', lang === 'zh' ? '营销活动体系' : 'CAMPAIGN SYSTEM'],
+        ['37 万', lang === 'zh' ? '明星活动单场获客' : 'TOP CAMPAIGN ACQUISITION'],
+        ['¥4–6', lang === 'zh' ? '重点项目单客成本' : 'KEY CAMPAIGN CAC'],
+      ].map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}
     </div>
   );
   if (tab === 'efficiency') return (
-    <div className="efficiency-visual visual-panel">
-      <div className="ring-chart"><strong>−60%</strong><span>{lang === 'zh' ? '人工咨询' : 'manual inquiries'}</span></div>
-      <div className="efficiency-bars">
-        <p><span>{lang === 'zh' ? '质检覆盖' : 'QA COVERAGE'}</span><b>15% → 100%</b></p>
-        <p><span>{lang === 'zh' ? '回复时长' : 'REPLY TIME'}</span><b>43 → 15 min</b></p>
-      </div>
+    <div className="metric-visual visual-panel ai-metrics">
+      {[
+        ['−60%', lang === 'zh' ? '人工咨询量' : 'MANUAL INQUIRIES'],
+        ['15% → 100%', lang === 'zh' ? '会话质检覆盖率' : 'QA COVERAGE'],
+        ['43 → 15 min', lang === 'zh' ? '平均回复时长' : 'REPLY TIME'],
+        ['7×24h', lang === 'zh' ? '简单问题自动应答' : 'AUTOMATED ANSWERS'],
+        [lang === 'zh' ? '实时推荐' : 'LIVE', lang === 'zh' ? '产品营销话术' : 'SALES SCRIPT SUGGESTIONS'],
+        [lang === 'zh' ? '自动转人工' : 'HANDOFF', lang === 'zh' ? '复杂问题承接' : 'COMPLEX CASE ROUTING'],
+      ].map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}
     </div>
   );
   return (
-    <div className="reach-visual visual-panel">
-      {[['90', lang === 'zh' ? '所高校' : 'universities'], ['16万', lang === 'zh' ? '新生' : 'students'], ['1.3万', lang === 'zh' ? '年均销量' : 'annual sales']].map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}
+    <div className="metric-visual visual-panel reach-metrics">
+      {[
+        ['90', lang === 'zh' ? '所高校' : 'UNIVERSITIES'],
+        ['16 万+', lang === 'zh' ? '触达新生' : 'STUDENTS REACHED'],
+        ['1.3 万', lang === 'zh' ? '年均线上销量' : 'ANNUAL ONLINE SALES'],
+        ['2 万', lang === 'zh' ? '新增私域用户' : 'NEW PRIVATE USERS'],
+        ['20', lang === 'zh' ? '校园 KOL' : 'CAMPUS KOLS'],
+        ['36 万+', lang === 'zh' ? '全网转评赞' : 'ENGAGEMENTS'],
+        ['5000+', lang === 'zh' ? '精准企微用户' : 'QUALIFIED WECOM USERS'],
+        ['¥4', lang === 'zh' ? '单客获客成本' : 'CAC PER USER'],
+      ].map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}
     </div>
   );
 }
@@ -197,6 +214,7 @@ function CaseVisual({ tab, lang }: { tab: CaseTab; lang: Language }) {
 export default function Home() {
   const [lang, setLang] = useState<Language>('zh');
   const [activeTab, setActiveTab] = useState<CaseTab>('scale');
+  const [showTeslaStory, setShowTeslaStory] = useState(false);
   const t = content[lang];
   const note = t.caseNotes[activeTab];
 
@@ -204,7 +222,7 @@ export default function Home() {
     <main>
       <header className="topbar">
         <a className="monogram" href="#top" aria-label="Cila home">CILA<span>·</span></a>
-        <nav aria-label="Primary navigation">{t.nav.map((item, index) => <a href={['#about', '#work', '#skills', '#contact'][index]} key={item}>{item}</a>)}</nav>
+        <nav aria-label="Primary navigation">{t.nav.map((item, index) => <a href={['#about', '#work', '#writing', '#skills', '#contact'][index]} key={item}>{item}</a>)}</nav>
         <button className="lang-toggle" onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')} aria-label="切换中英文"><strong>{lang === 'zh' ? '中' : 'EN'}</strong><span>/</span>{lang === 'zh' ? 'EN' : '中'}</button>
       </header>
 
@@ -223,7 +241,6 @@ export default function Home() {
 
       <section className="case-study" id="work">
         <div className="section-intro"><p>{t.featured}</p><h2>{t.caseTitle}</h2><span>{t.caseLead}</span></div>
-        <div className="case-image"><img src="/profile-assets/wecom-growth.png" alt="抽象呈现企微私域网络的蓝色透明装置" /><span>CASE 01 · WECOM GROWTH SYSTEM</span></div>
         <div className="case-dashboard" id="case-study">
           <div className="tablist" role="tablist" aria-label="案例数据维度">{tabKeys.map((key, index) => <button role="tab" aria-selected={activeTab === key} className={activeTab === key ? 'active' : ''} onClick={() => setActiveTab(key)} key={key}><span>0{index + 1}</span>{t.caseLabels[index]}</button>)}</div>
           <div className="dashboard-body">
@@ -245,12 +262,12 @@ export default function Home() {
             <div className="writing-image"><img src="/profile-assets/wic-writing.jpg" alt="世界互联网大会英文文章节选" /><b>EN</b></div>
             <div className="writing-copy"><span>WORLD INTERNET CONFERENCE · 2021</span><h3>Digitalization Boosts Development of Cultural, Creative Industry</h3><p>{t.writingRole[0]}</p><small>{t.writingDesc[0]}</small><i>{t.readOriginal}</i></div>
           </a>
-          <article className="writing-card">
-            <div className="writing-image"><img src="/profile-assets/tesla-writing.jpg" alt="特斯拉车主故事作品节选" /><b>ZH</b></div>
+          <button className="writing-card" type="button" onClick={() => setShowTeslaStory(true)}>
+            <div className="writing-image"><img src="/profile-assets/tesla-village-editorial.png" alt="山村、新能源汽车与充电设施的纪实风格画面" /><b>ZH</b></div>
             <div className="writing-copy"><span>TESLA / TSPACE · 2022</span><h3>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h3><p>{t.writingRole[1]}</p><small>{t.writingDesc[1]}</small><i>{t.portfolioExcerpt}</i></div>
-          </article>
+          </button>
           <a className="writing-card video-work" href="https://xhslink.cn/o/9cXjO92cfpm" target="_blank" rel="noreferrer">
-            <div className="writing-image"><img src="/profile-assets/robot-story.png" alt="2026 世界机器人大会视频作品" /><b>▶</b></div>
+            <div className="writing-image"><img src="/profile-assets/robot-video-cover.webp" alt="2026 世界机器人大会视频真实封面" /><b>▶</b></div>
             <div className="writing-copy"><span>XIAOHONGSHU · 2026</span><h3>{lang === 'zh' ? '2026 世界机器人大会深入带逛' : 'Inside the 2026 World Robot Conference'}</h3><p>{t.writingRole[2]}</p><small>{t.writingDesc[2]}</small><i>{t.watchVideo}</i></div>
           </a>
         </div>
@@ -279,6 +296,19 @@ export default function Home() {
       </section>
 
       <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a><div><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
+
+      {showTeslaStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '大山里的特斯拉村详细内容' : 'Tesla Village full story'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowTeslaStory(false)} onClick={() => setShowTeslaStory(false)}>
+        <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
+          <button className="story-close" type="button" onClick={() => setShowTeslaStory(false)}>{lang === 'zh' ? '关闭' : 'Close'} ×</button>
+          <p>TESLA / TSPACE · 2022</p>
+          <h2>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h2>
+          <span>{lang === 'zh' ? '车主采访、品牌故事撰写 · 原作品集全文' : 'Owner interview and brand storytelling · full portfolio excerpt'}</span>
+          <div className="story-pages">
+            <div className="story-page-crop"><img src="/profile-assets/tesla-story-1.jpg" alt={lang === 'zh' ? '特斯拉村故事原文开篇' : 'Opening of the Tesla Village story'} /></div>
+            {[2, 3].map(page => <img key={page} src={`/profile-assets/tesla-story-${page}.jpg`} alt={`${lang === 'zh' ? '特斯拉村故事原文第' : 'Tesla Village story page '}${page}${lang === 'zh' ? '页' : ''}`} />)}
+          </div>
+        </div>
+      </div>}
     </main>
   );
 }
