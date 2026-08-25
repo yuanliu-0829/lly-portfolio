@@ -33,6 +33,14 @@ const content = {
     ],
     abilitiesEyebrow: 'CAPABILITIES / 核心能力',
     abilitiesTitle: '内容是入口，增长是结果',
+    writingEyebrow: 'PUBLISHED WORK / 内容作品',
+    writingTitle: '既能讲清技术，也能讲好故事',
+    writingIntro: '从英文行业编辑、品牌车主故事到科技现场视频，我关注的不只是信息准确，也关心内容如何被人理解和记住。',
+    writingRole: ['英文选题与编辑', '车主采访与品牌故事撰写', '选题、出镜、拍摄与剪辑'],
+    writingDesc: ['发表于世界互联网大会海外官网，讨论数字化如何推动文化创意产业发展。', '以云南攀枝戛村为现场，记录新能源科技、乡村发展与人的真实连接。', '深入带逛 2026 世界机器人大会，把复杂的前沿技术转化为现场化、可理解的视频内容。'],
+    readOriginal: '阅读英文原文 ↗',
+    watchVideo: '前往小红书观看 ↗',
+    portfolioExcerpt: '作品集节选',
     abilities: [
       ['科技内容策划', '把复杂功能与行业概念翻译成清晰、有传播力的内容。'],
       ['私域体系搭建', '从获客入口到留存、转化与服务的完整运营闭环。'],
@@ -48,8 +56,8 @@ const content = {
     aboutBody: ['你好，我是刘力源（Cila），一名数字化营销经理。过去 3 年，我在中国移动北京公司从 0 到 1 搭建企微私域体系，也曾在特斯拉运营百万级社交媒体矩阵、在字节跳动飞书服务 KA 客户。', '我每天关注 AI 与具身智能，也持续学习如何把新技术讲得更准确、更有吸引力。不要自我设限，永远学习，保持好奇心。'],
     socialTitle: '工作之外，我也在记录生活与科技现场。',
     socialStats: ['428 关注者', '5.3 万获赞与收藏'],
-    resume: '下载完整个人简历',
-    resumeNote: '教育经历、完整工作经历与技能详情 · PDF · 1 页',
+    resume: '邮件索取完整个人简历',
+    resumeNote: '为保护个人信息，完整简历将通过邮件单独发送',
     contactLabel: 'LET’S TALK / 联系我',
     contactTitle: '正在寻找科技与 AI 领域的新媒体运营机会，期待加入一个认真做产品、也认真理解用户的团队。',
     email: '发送邮件',
@@ -81,6 +89,14 @@ const content = {
     ],
     abilitiesEyebrow: 'CAPABILITIES',
     abilitiesTitle: 'Content is the entry. Growth is the outcome.',
+    writingEyebrow: 'PUBLISHED WORK',
+    writingTitle: 'Making technology clear — and stories memorable',
+    writingIntro: 'From English industry editing and brand storytelling to field video, I care about both factual precision and how an idea stays with its audience.',
+    writingRole: ['English commissioning & editing', 'Owner interview & brand storytelling', 'Concept, on-camera presenting, filming & editing'],
+    writingDesc: ['Published on the World Internet Conference international site, exploring how digitalization advances cultural and creative industries.', 'A field story from Panzhiga Village, connecting clean technology, rural development and lived experience.', 'An in-depth tour of the 2026 World Robot Conference, translating frontier technologies into accessible field reporting.'],
+    readOriginal: 'Read the article ↗',
+    watchVideo: 'Watch on Xiaohongshu ↗',
+    portfolioExcerpt: 'Portfolio excerpt',
     abilities: [
       ['Tech content strategy', 'Translate complex products and concepts into clear, engaging stories.'],
       ['Private-domain systems', 'Build complete loops from acquisition to retention, conversion and service.'],
@@ -96,8 +112,8 @@ const content = {
     aboutBody: ['Hi, I’m Liu Liyuan (Cila), a digital marketing manager. Over the past three years, I built China Mobile Beijing’s WeCom ecosystem from scratch. Before that, I ran million-scale social channels at Tesla and supported key accounts at ByteDance Feishu.', 'I follow AI and embodied intelligence every day, always learning how to explain emerging technology with more accuracy and appeal. Stay curious, keep learning, and never self-limit.'],
     socialTitle: 'Outside work, I document life and technology in the field.',
     socialStats: ['428 followers', '53K likes & saves'],
-    resume: 'Download full résumé',
-    resumeNote: 'Education, full experience and skills · PDF · 1 page',
+    resume: 'Request my full résumé',
+    resumeNote: 'To protect personal information, the full résumé is shared individually by email',
     contactLabel: 'LET’S TALK',
     contactTitle: 'I’m exploring content and social media opportunities in tech and AI, and looking for a team that cares equally about its product and its users.',
     email: 'Send an email',
@@ -107,14 +123,54 @@ const content = {
 const tabKeys: CaseTab[] = ['scale', 'conversion', 'efficiency', 'reach'];
 const projectImages = ['/profile-assets/wecom-growth.png', '/profile-assets/robot-story.png', '/profile-assets/content-network.png'];
 
-function CaseVisual({ tab, lang }: { tab: CaseTab; lang: Language }) {
-  if (tab === 'scale') return (
-    <div className="scale-visual visual-panel">
-      <div className="orbit" aria-hidden="true"><i /><i /><i /><i /><i /></div>
-      <strong>{lang === 'zh' ? '360万' : '3.6M'}</strong><span>{lang === 'zh' ? '有效用户' : 'valid users'}</span>
-      <p>{lang === 'zh' ? 'APP · 小程序 · 公众号 · 线下 · 活动' : 'APP · MINI APP · WECHAT · OFFLINE · CAMPAIGNS'}</p>
+const growthData = [
+  { period: '2023 Q3', total: 998374, added: null, retention: null, eventZh: '', eventEn: '' },
+  { period: '2023 Q4', total: 1008373, added: 9999, retention: null, eventZh: '', eventEn: '' },
+  { period: '2024 Q1', total: 1047463, added: 39090, retention: null, eventZh: '优化分公司运营，搭建营销话术与培训体系', eventEn: 'Optimized branch operations and built scripts and training' },
+  { period: '2024 Q2', total: 1063453, added: 15990, retention: null, eventZh: '', eventEn: '' },
+  { period: '2024 Q3', total: 1083726, added: 20273, retention: null, eventZh: '', eventEn: '' },
+  { period: '2024 Q4', total: 1134087, added: 50361, retention: null, eventZh: '', eventEn: '' },
+  { period: '2025 Q1', total: 1203840, added: 69753, retention: null, eventZh: '', eventEn: '' },
+  { period: '2025 Q2', total: 1324734, added: 120894, retention: null, eventZh: '策略转向客户服务，上线运营托管平台', eventEn: 'Shifted to customer service and launched managed operations' },
+  { period: '2025 Q3', total: 1488208, added: 163474, retention: null, eventZh: '', eventEn: '' },
+  { period: '2025 Q4', total: 1826533, added: 338325, retention: null, eventZh: '上线智能获客码，完善客户标签体系', eventEn: 'Launched smart acquisition codes and rebuilt customer tags' },
+  { period: '2026 Q1', total: 2367149, added: 540616, retention: 43, eventZh: '全渠道部署获客点位，制定运营规范', eventEn: 'Deployed omnichannel acquisition points and operating standards' },
+  { period: '2026 Q2', total: 2967570, added: 600421, retention: 57, eventZh: '上线 AI 质检、AI 智能体与全生命周期 SOP', eventEn: 'Launched AI QA, AI agents and lifecycle SOPs' },
+  { period: '2026-08-25', total: 3597487, added: 629917, retention: 62, eventZh: '校园迎新嵌入企微获客流程，丰富获客活动', eventEn: 'Embedded WeCom acquisition into campus orientation' },
+];
+
+function GrowthTrend({ lang }: { lang: Language }) {
+  const [selected, setSelected] = useState(growthData.length - 1);
+  const point = growthData[selected];
+  const coords = growthData.map((item, index) => ({ x: 4 + index * 7.67, y: 92 - (item.total / 3597487) * 78 }));
+  const polyline = coords.map(({ x, y }) => `${x},${y}`).join(' ');
+  const format = (value: number) => lang === 'zh' ? `${(value / 10000).toFixed(value >= 1000000 ? 1 : 0)}万` : `${(value / 1000000).toFixed(2)}M`;
+
+  return (
+    <div className="trend-visual visual-panel">
+      <div className="trend-chart">
+        <div className="trend-axis"><span>4M</span><span>2M</span><span>0</span></div>
+        <div className="trend-plot" aria-label={lang === 'zh' ? '累计有效用户增长趋势' : 'Cumulative valid-user growth'}>
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <line x1="0" y1="14" x2="100" y2="14" /><line x1="0" y1="53" x2="100" y2="53" /><line x1="0" y1="92" x2="100" y2="92" />
+            <polyline points={polyline} />
+          </svg>
+          {coords.map(({ x, y }, index) => <button key={growthData[index].period} style={{ left: `${x}%`, top: `${y}%` }} className={selected === index ? 'active' : growthData[index].eventZh ? 'event' : ''} onClick={() => setSelected(index)} aria-label={`${growthData[index].period}: ${format(growthData[index].total)}`} />)}
+          <div className="trend-xlabels"><span>2023 Q3</span><span>2025 Q1</span><span>2026 Q1</span><span>08.25</span></div>
+        </div>
+      </div>
+      <div className="trend-detail">
+        <span>{point.period} · {selected === growthData.length - 1 ? (lang === 'zh' ? '截至当日实际值' : 'actual as of this date') : (lang === 'zh' ? '季度末' : 'quarter end')}</span>
+        <strong>{format(point.total)}</strong>
+        <div><p>{lang === 'zh' ? '累计有效用户' : 'CUMULATIVE USERS'}</p>{point.added && <p>{lang === 'zh' ? `当期新增 ${format(point.added)}` : `NEW ${format(point.added)}`}</p>}{point.retention && <p>{lang === 'zh' ? `30天留存 ${point.retention}%` : `30-DAY RETENTION ${point.retention}%`}</p>}</div>
+        {(point.eventZh || point.eventEn) && <small>● {lang === 'zh' ? point.eventZh : point.eventEn}</small>}
+      </div>
     </div>
   );
+}
+
+function CaseVisual({ tab, lang }: { tab: CaseTab; lang: Language }) {
+  if (tab === 'scale') return <GrowthTrend lang={lang} />;
   if (tab === 'conversion') return (
     <div className="comparison-visual visual-panel">
       <div className="compare-row"><span>{lang === 'zh' ? '优化前' : 'BEFORE'}</span><i style={{ width: '18.75%' }} /><b>¥1.5</b></div>
@@ -182,6 +238,24 @@ export default function Home() {
         <div className="projects-grid">{t.projects.map((project, index) => <article className="project-card" key={project[0]}><div className="project-image"><img src={projectImages[index]} alt="" /><span>0{index + 1}</span></div><p>{project[1]}</p><h3>{project[0]}</h3><div className="project-foot"><p>{project[2]}</p><i>↗</i></div></article>)}</div>
       </section>
 
+      <section className="writing-section" id="writing">
+        <div className="writing-heading"><p>{t.writingEyebrow}</p><h2>{t.writingTitle}</h2><span>{t.writingIntro}</span></div>
+        <div className="writing-grid">
+          <a className="writing-card" href="https://www.wuzhenwic.org/2021-08/13/c_651147.htm" target="_blank" rel="noreferrer">
+            <div className="writing-image"><img src="/profile-assets/wic-writing.jpg" alt="世界互联网大会英文文章节选" /><b>EN</b></div>
+            <div className="writing-copy"><span>WORLD INTERNET CONFERENCE · 2021</span><h3>Digitalization Boosts Development of Cultural, Creative Industry</h3><p>{t.writingRole[0]}</p><small>{t.writingDesc[0]}</small><i>{t.readOriginal}</i></div>
+          </a>
+          <article className="writing-card">
+            <div className="writing-image"><img src="/profile-assets/tesla-writing.jpg" alt="特斯拉车主故事作品节选" /><b>ZH</b></div>
+            <div className="writing-copy"><span>TESLA / TSPACE · 2022</span><h3>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h3><p>{t.writingRole[1]}</p><small>{t.writingDesc[1]}</small><i>{t.portfolioExcerpt}</i></div>
+          </article>
+          <a className="writing-card video-work" href="https://xhslink.cn/o/9cXjO92cfpm" target="_blank" rel="noreferrer">
+            <div className="writing-image"><img src="/profile-assets/robot-story.png" alt="2026 世界机器人大会视频作品" /><b>▶</b></div>
+            <div className="writing-copy"><span>XIAOHONGSHU · 2026</span><h3>{lang === 'zh' ? '2026 世界机器人大会深入带逛' : 'Inside the 2026 World Robot Conference'}</h3><p>{t.writingRole[2]}</p><small>{t.writingDesc[2]}</small><i>{t.watchVideo}</i></div>
+          </a>
+        </div>
+      </section>
+
       <section className="skills-section" id="skills">
         <div className="skills-heading"><p>{t.abilitiesEyebrow}</p><h2>{t.abilitiesTitle}</h2></div>
         <div className="skills-list">{t.abilities.map(([title, description], index) => <details key={title} open={index === 0}><summary><span>0{index + 1}</span><strong>{title}</strong><i>+</i></summary><p>{description}</p></details>)}</div>
@@ -196,10 +270,10 @@ export default function Home() {
         <div className="social-copy"><p>XIAOHONGSHU / @源饱饱Cila</p><h2>{t.socialTitle}</h2><div>{t.socialStats.map(stat => <span key={stat}>{stat}</span>)}</div></div>
         <div className="social-aside">
           <div className="qr-card"><img src="/profile-assets/xiaohongshu-qr.jpg" alt="小红书账号源饱饱 Cila 的二维码" /><span>SCAN TO FOLLOW ↗</span></div>
-          <a className="resume-card" href="/profile-assets/cila-resume.pdf" download>
-            <div className="resume-preview"><img src="/profile-assets/resume-preview.jpg" alt="个人简历首页预览" /></div>
+          <a className="resume-card" href={`mailto:lly156156186292022@163.com?subject=${encodeURIComponent(lang === 'zh' ? '索取刘力源 Cila 的完整简历' : 'Request for Cila Liu’s full résumé')}`}>
+            <div className="resume-document-mock" aria-hidden="true"><strong>CILA LIU</strong><i /><i /><i /><i /><i /><span>RÉSUMÉ</span></div>
             <div className="resume-meta"><span>RÉSUMÉ / PDF</span><strong>{t.resume}</strong><p>{t.resumeNote}</p></div>
-            <i aria-hidden="true">↓</i>
+            <i aria-hidden="true">↗</i>
           </a>
         </div>
       </section>
