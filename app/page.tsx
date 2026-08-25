@@ -27,9 +27,9 @@ const content = {
     workEyebrow: 'SELECTED WORK / 作品精选',
     workTitle: '我如何把策略变成结果',
     projects: [
-      ['企微私域增长系统', '用户增长 · AI 运营', '360 万有效客户、42% 留存率与全链路服务体系。'],
-      ['让复杂技术被看见', '科技内容 · 视频叙事', '从特斯拉车主故事到世界机器人大会，把技术现场转化为大众内容。'],
-      ['从公域声量到私域转化', '整合营销 · KOL', '联动 20 位校园 KOL，获得 36 万+转评赞，精准获客 5000+。'],
+      ['把增长做成系统，而不是一次活动', 'METHOD 01 / 增长系统化', '先统一有效用户口径，再打通入口、标签、触达、服务和复盘，让每次增长动作都能进入同一套运营闭环。', '入口盘点 → 用户分层 → 触达脚本 → 服务承接 → 数据复盘', '可迁移到会员、社群、产品用户与私域运营。'],
+      ['把复杂技术翻译成用户愿意理解的内容', 'METHOD 02 / 技术内容翻译', '先理解产品机制和技术事实，再寻找用户问题与人物故事；同一信息根据公众号、短视频和海外内容重新组织表达。', '技术拆解 → 用户洞察 → 叙事切口 → 渠道适配 → 内容复盘', '可迁移到 AI、半导体、机器人及其他技术行业。'],
+      ['用节奏与接口，推动复杂项目落地', 'METHOD 03 / 项目交付', '把目标拆成关键节点、责任人与交付物，用风险清单和固定复盘节奏串联政策、页面、内容、物流、客服与传播资源。', '目标拆解 → 责任对齐 → 节点管理 → 风险预案 → 结果复盘', '可迁移到市场活动、产品上线和跨部门专项。'],
     ],
     abilitiesEyebrow: 'CAPABILITIES / 核心能力',
     abilitiesTitle: '内容是入口，增长是结果',
@@ -39,17 +39,18 @@ const content = {
     writingRole: ['英文选题与编辑', '车主采访与品牌故事撰写', '选题、出镜、拍摄与剪辑'],
     writingDesc: ['发表于世界互联网大会海外官网，讨论数字化如何推动文化创意产业发展。', '以云南攀枝戛村为现场，记录新能源科技、乡村发展与人的真实连接。', '深入带逛 2026 世界机器人大会，把复杂的前沿技术转化为现场化、可理解的视频内容。'],
     readOriginal: '阅读英文原文 ↗',
+    archivedExcerpt: '查看作品留存节选 ↗',
     watchVideo: '前往小红书观看 ↗',
     portfolioExcerpt: '查看详细内容 ↗',
     abilities: [
-      ['科技内容策划', '例如：运营特斯拉百万级双微一抖矩阵，月均产出 30+ 篇文案、篇均阅读 1 万+；“大山里的特斯拉村”获点赞 2 万+。'],
-      ['私域体系搭建', '例如：打通 APP、小程序、公众号等 5 大获客入口，累计沉淀 359.7 万有效用户，最高 30 天留存率 62%。'],
-      ['AI 运营实战', '例如：上线 7×24 小时智能应答与 AI 会话质检，使人工咨询量下降 60%，质检覆盖率从 15% 提升至 100%。'],
-      ['短视频全链路', '例如：独立完成世界机器人大会视频的选题、脚本、出镜、拍摄、剪辑与封面，单人闭环产出科技现场内容。'],
-      ['数据复盘增长', '例如：将客单价从 1.5 元提升至 8 元、精准推送转化率做到 5%，并把演唱会裂变获客成本控制在 4 元/人。'],
-      ['KOL 整合传播', '例如：联动 20 位校园 KOL 搭建传播矩阵，获得 36 万+ 转评赞，沉淀 5000+ 精准企微用户。'],
-      ['跨部门项目统筹', '例如：统筹近 90 所高校迎新项目，协调政策、页面、物料、物流与客服，触达 16 万+ 新生。'],
-      ['英文内容能力', '例如：英语专业八级，曾为中国日报负责英文选题与编辑，作品发表于世界互联网大会海外官网。'],
+      ['科技内容策划', '运营特斯拉百万级双微一抖矩阵，月均产出 30+ 篇文案、篇均阅读 1 万+；“大山里的特斯拉村”获点赞 2 万+。'],
+      ['私域体系搭建', '打通 APP、小程序、公众号等 5 大获客入口，累计沉淀 359.7 万有效用户，最高 30 天留存率 62%。'],
+      ['AI 运营实战', '上线 7×24 小时智能应答与 AI 会话质检，使人工咨询量下降 60%，质检覆盖率从 15% 提升至 100%。'],
+      ['短视频全链路', '独立完成世界机器人大会视频的选题、脚本、出镜、拍摄、剪辑与封面，单人闭环产出科技现场内容。'],
+      ['数据复盘增长', '将客单价从 1.5 元提升至 8 元、精准推送转化率做到 5%，并把演唱会裂变获客成本控制在 4 元/人。'],
+      ['KOL 整合传播', '联动 20 位校园 KOL 搭建传播矩阵，获得 36 万+ 转评赞，沉淀 5000+ 精准企微用户。'],
+      ['跨部门项目统筹', '统筹近 90 所高校迎新项目，协调政策、页面、物料、物流与客服，触达 16 万+ 新生。'],
+      ['英文内容能力', '英语专业八级，曾为中国日报负责英文选题与编辑，作品发表于世界互联网大会海外官网。'],
     ],
     aboutEyebrow: 'ABOUT CILA / 关于我',
     aboutTitle: '好的技术，值得被更多人看见。',
@@ -61,6 +62,7 @@ const content = {
     contactLabel: 'LET’S TALK / 联系我',
     contactTitle: '正在寻找科技与 AI 领域的新媒体运营机会，期待加入一个认真做产品、也认真理解用户的团队。',
     email: '发送邮件',
+    phone: '拨打电话',
   },
   en: {
     nav: ['About', 'Cases', 'Work', 'Skills', 'Contact'],
@@ -83,9 +85,9 @@ const content = {
     workEyebrow: 'SELECTED WORK',
     workTitle: 'Turning strategy into outcomes',
     projects: [
-      ['WeCom growth system', 'User growth · AI operations', '3.6M valid users, 42% retention and an end-to-end service system.'],
-      ['Making complex tech visible', 'Tech content · Video storytelling', 'From Tesla owner stories to the World Robot Conference, turning technical scenes into human stories.'],
-      ['From public reach to private conversion', 'Integrated marketing · KOL', 'A 20-KOL campus network generated 360K+ engagements and 5,000+ qualified users.'],
+      ['Build growth as a system, not a one-off campaign', 'METHOD 01 / GROWTH SYSTEM', 'Define the valid-user metric first, then connect acquisition, tagging, messaging, service and review into one repeatable operating loop.', 'Channel audit → segmentation → scripts → service → review', 'Transferable to membership, community, product-user and private-domain operations.'],
+      ['Translate complex technology into stories people choose to understand', 'METHOD 02 / TECH TRANSLATION', 'Start with the product mechanism and technical truth, then find the user problem and human story; reshape the same facts for articles, video and global channels.', 'Technical analysis → audience insight → narrative angle → channel adaptation → review', 'Transferable to AI, semiconductors, robotics and other technical industries.'],
+      ['Use cadence and interfaces to deliver complex programs', 'METHOD 03 / PROGRAM DELIVERY', 'Break goals into milestones, owners and deliverables; connect policy, pages, content, logistics, service and distribution through risk lists and fixed review rhythms.', 'Goal breakdown → ownership → milestones → risk plan → review', 'Transferable to campaigns, product launches and cross-functional initiatives.'],
     ],
     abilitiesEyebrow: 'CAPABILITIES',
     abilitiesTitle: 'Content is the entry. Growth is the outcome.',
@@ -95,17 +97,18 @@ const content = {
     writingRole: ['English commissioning & editing', 'Owner interview & brand storytelling', 'Concept, on-camera presenting, filming & editing'],
     writingDesc: ['Published on the World Internet Conference international site, exploring how digitalization advances cultural and creative industries.', 'A field story from Panzhiga Village, connecting clean technology, rural development and lived experience.', 'An in-depth tour of the 2026 World Robot Conference, translating frontier technologies into accessible field reporting.'],
     readOriginal: 'Read the article ↗',
+    archivedExcerpt: 'View archived excerpt ↗',
     watchVideo: 'Watch on Xiaohongshu ↗',
     portfolioExcerpt: 'View full story ↗',
     abilities: [
-      ['Tech content strategy', 'Example: ran Tesla’s million-scale social matrix, producing 30+ pieces monthly with 10K+ average reads; one owner story earned 20K+ likes.'],
-      ['Private-domain systems', 'Example: connected five acquisition channels and grew the system to 3.597M valid users with peak 30-day retention of 62%.'],
-      ['Applied AI operations', 'Example: launched 24/7 AI replies and conversation QA, cutting manual inquiries by 60% and expanding QA coverage from 15% to 100%.'],
-      ['End-to-end video', 'Example: independently planned, presented, filmed, edited and packaged an on-site World Robot Conference video.'],
-      ['Data-led optimization', 'Example: raised AOV from RMB 1.5 to RMB 8, achieved 5% targeted-push conversion and held campaign CAC to RMB 4.'],
-      ['KOL campaigns', 'Example: coordinated 20 campus KOLs, generating 360K+ engagements and converting 5,000+ qualified WeCom users.'],
-      ['Cross-functional delivery', 'Example: led orientation delivery across nearly 90 universities, coordinating policy, pages, assets, logistics and service for 160K+ students.'],
-      ['English content', 'Example: TEM-8 certified; commissioned and edited English reporting published by the World Internet Conference international site.'],
+      ['Tech content strategy', 'Ran Tesla’s million-scale social matrix, producing 30+ pieces monthly with 10K+ average reads; one owner story earned 20K+ likes.'],
+      ['Private-domain systems', 'Connected five acquisition channels and grew the system to 3.597M valid users with peak 30-day retention of 62%.'],
+      ['Applied AI operations', 'Launched 24/7 AI replies and conversation QA, cutting manual inquiries by 60% and expanding QA coverage from 15% to 100%.'],
+      ['End-to-end video', 'Independently planned, presented, filmed, edited and packaged an on-site World Robot Conference video.'],
+      ['Data-led optimization', 'Raised AOV from RMB 1.5 to RMB 8, achieved 5% targeted-push conversion and held campaign CAC to RMB 4.'],
+      ['KOL campaigns', 'Coordinated 20 campus KOLs, generating 360K+ engagements and converting 5,000+ qualified WeCom users.'],
+      ['Cross-functional delivery', 'Led orientation delivery across nearly 90 universities, coordinating policy, pages, assets, logistics and service for 160K+ students.'],
+      ['English content', 'TEM-8 certified; commissioned and edited English reporting published by the World Internet Conference international site.'],
     ],
     aboutEyebrow: 'ABOUT CILA',
     aboutTitle: 'Good technology deserves to be seen.',
@@ -117,11 +120,12 @@ const content = {
     contactLabel: 'LET’S TALK',
     contactTitle: 'I’m exploring content and social media opportunities in tech and AI, and looking for a team that cares equally about its product and its users.',
     email: 'Send an email',
+    phone: 'Call me',
   },
 };
 
 const tabKeys: CaseTab[] = ['scale', 'conversion', 'efficiency', 'reach'];
-const projectImages = ['/profile-assets/wecom-growth.png', '/profile-assets/robot-story.png', '/profile-assets/content-network.png'];
+const projectImages = ['/profile-assets/method-growth-system.png', '/profile-assets/method-tech-translation.png', '/profile-assets/method-program-delivery.png'];
 
 const growthData = [
   { period: '2023 Q3', total: 998374, added: null, retention: null, eventZh: '盘点存量企微用户，明确累计有效用户口径，建立增长基线。', eventEn: 'Audited existing WeCom users, defined the valid-user metric and established the baseline.' },
@@ -214,6 +218,7 @@ function CaseVisual({ tab, lang }: { tab: CaseTab; lang: Language }) {
 export default function Home() {
   const [lang, setLang] = useState<Language>('zh');
   const [activeTab, setActiveTab] = useState<CaseTab>('scale');
+  const [showWicStory, setShowWicStory] = useState(false);
   const [showTeslaStory, setShowTeslaStory] = useState(false);
   const t = content[lang];
   const note = t.caseNotes[activeTab];
@@ -237,8 +242,6 @@ export default function Home() {
         <div className="signal-line" aria-hidden="true"><span>CONTENT</span><i /><span>DATA</span><i /><span>GROWTH</span></div>
       </section>
 
-      <section className="proof-strip" aria-label="关键成果">{t.proof.map(([value, label]) => <div className="proof-item" key={label}><strong>{value}</strong><span>{label}</span></div>)}</section>
-
       <section className="case-study" id="work">
         <div className="section-intro"><p>{t.featured}</p><h2>{t.caseTitle}</h2><span>{t.caseLead}</span></div>
         <div className="case-dashboard" id="case-study">
@@ -252,16 +255,16 @@ export default function Home() {
 
       <section className="projects-section">
         <div className="project-heading"><p>{t.workEyebrow}</p><h2>{t.workTitle}</h2></div>
-        <div className="projects-grid">{t.projects.map((project, index) => <article className="project-card" key={project[0]}><div className="project-image"><img src={projectImages[index]} alt="" /><span>0{index + 1}</span></div><p>{project[1]}</p><h3>{project[0]}</h3><div className="project-foot"><p>{project[2]}</p><i>↗</i></div></article>)}</div>
+        <div className="projects-grid">{t.projects.map((project, index) => <article className="project-card" key={project[0]}><div className="project-image"><img src={projectImages[index]} alt="" /><span>0{index + 1}</span></div><p>{project[1]}</p><h3>{project[0]}</h3><p className="project-summary">{project[2]}</p><strong className="project-process">{project[3]}</strong><div className="project-foot"><p>{project[4]}</p><i>↗</i></div></article>)}</div>
       </section>
 
       <section className="writing-section" id="writing">
         <div className="writing-heading"><p>{t.writingEyebrow}</p><h2>{t.writingTitle}</h2><span>{t.writingIntro}</span></div>
         <div className="writing-grid">
-          <a className="writing-card" href="https://www.wuzhenwic.org/2021-08/13/c_651147.htm" target="_blank" rel="noreferrer">
-            <div className="writing-image"><img src="/profile-assets/wic-writing.jpg" alt="世界互联网大会英文文章节选" /><b>EN</b></div>
-            <div className="writing-copy"><span>WORLD INTERNET CONFERENCE · 2021</span><h3>Digitalization Boosts Development of Cultural, Creative Industry</h3><p>{t.writingRole[0]}</p><small>{t.writingDesc[0]}</small><i>{t.readOriginal}</i></div>
-          </a>
+          <button className="writing-card" type="button" onClick={() => setShowWicStory(true)}>
+            <div className="writing-image"><img src="/profile-assets/wic-excerpt.jpg" alt="世界互联网大会英文文章正文精选段落" /><b>EN</b></div>
+            <div className="writing-copy"><span>WORLD INTERNET CONFERENCE · 2021</span><h3>Digitalization Boosts Development of Cultural, Creative Industry</h3><p>{t.writingRole[0]}</p><small>{t.writingDesc[0]}</small><i>{t.archivedExcerpt}</i></div>
+          </button>
           <button className="writing-card" type="button" onClick={() => setShowTeslaStory(true)}>
             <div className="writing-image"><img src="/profile-assets/tesla-village-editorial.png" alt="山村、新能源汽车与充电设施的纪实风格画面" /><b>ZH</b></div>
             <div className="writing-copy"><span>TESLA / TSPACE · 2022</span><h3>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h3><p>{t.writingRole[1]}</p><small>{t.writingDesc[1]}</small><i>{t.portfolioExcerpt}</i></div>
@@ -286,7 +289,10 @@ export default function Home() {
       <section className="social-section">
         <div className="social-copy"><p>XIAOHONGSHU / @源饱饱Cila</p><h2>{t.socialTitle}</h2><div>{t.socialStats.map(stat => <span key={stat}>{stat}</span>)}</div></div>
         <div className="social-aside">
-          <div className="qr-card"><img src="/profile-assets/xiaohongshu-qr.jpg" alt="小红书账号源饱饱 Cila 的二维码" /><span>SCAN TO FOLLOW ↗</span></div>
+          <a className="qr-card" href="/profile-assets/xiaohongshu-qr.jpg" target="_blank" rel="noreferrer" aria-label="打开小红书二维码原图">
+            <div className="qr-code-zoom"><img src="/profile-assets/xiaohongshu-qr.jpg" alt="小红书账号源饱饱 Cila 的二维码" /></div>
+            <strong>@源饱饱Cila</strong><span>{lang === 'zh' ? '长按识别或使用手机扫码' : 'PRESS AND HOLD OR SCAN'}</span>
+          </a>
           <a className="resume-card" href={`mailto:lly156156186292022@163.com?subject=${encodeURIComponent(lang === 'zh' ? '索取刘力源 Cila 的完整简历' : 'Request for Cila Liu’s full résumé')}`}>
             <div className="resume-document-mock" aria-hidden="true"><strong>CILA LIU</strong><i /><i /><i /><i /><i /><span>RÉSUMÉ</span></div>
             <div className="resume-meta"><span>RÉSUMÉ / PDF</span><strong>{t.resume}</strong><p>{t.resumeNote}</p></div>
@@ -295,7 +301,20 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a><div><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
+      <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><div className="contact-links"><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a><a href="tel:+8613810504936"><span>{t.phone}</span>138 1050 4936 ↗</a></div><div className="footer-meta"><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
+
+      {showWicStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '中国日报英文作品留存节选' : 'Archived China Daily article excerpt'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowWicStory(false)} onClick={() => setShowWicStory(false)}>
+        <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
+          <button className="story-close" type="button" onClick={() => setShowWicStory(false)}>{lang === 'zh' ? '关闭' : 'Close'} ×</button>
+          <p>CHINA DAILY / WORLD INTERNET CONFERENCE · 2021</p>
+          <h2>Digitalization Boosts Development of Cultural, Creative Industry</h2>
+          <span>{lang === 'zh' ? '英文选题与编辑 · 作品集留存节选（原发布页当前无法稳定访问）' : 'English commissioning and editing · archived portfolio excerpt (the original page is currently unavailable)'}</span>
+          <div className="story-pages wic-story-pages">
+            <div className="wic-page-start"><img src="/profile-assets/wic-story-1.jpg" alt={lang === 'zh' ? '中国日报英文作品正文第一页' : 'First archived page of the China Daily article'} /></div>
+            <div className="wic-page-end"><img src="/profile-assets/wic-story-2.jpg" alt={lang === 'zh' ? '中国日报英文作品正文第二页' : 'Second archived page of the China Daily article'} /></div>
+          </div>
+        </div>
+      </div>}
 
       {showTeslaStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '大山里的特斯拉村详细内容' : 'Tesla Village full story'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowTeslaStory(false)} onClick={() => setShowTeslaStory(false)}>
         <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
