@@ -393,8 +393,8 @@ export default function Home() {
             <div className="writing-text-preview" lang="en"><b>EN</b><p>A new pattern of cultural and creative industry based on technology has been vigorously developed in recent years.</p></div>
             <div className="writing-copy"><span>WORLD INTERNET CONFERENCE · 2021</span><h3>Digitalization Boosts Development of Cultural, Creative Industry</h3><p>{t.writingRole[0]}</p><small>{t.writingDesc[0]}</small><i>{t.archivedExcerpt}</i></div>
           </button>
-          <button className="writing-card" type="button" onClick={() => setShowTeslaStory(true)}>
-            <div className="writing-text-preview"><b>ZH</b><p>云南一处群山脚下，山高谷低，有 10 多个自然村落，各村落沿山谷分散而居。攀枝戛村，便坐落在这里。</p></div>
+          <button className="writing-card tesla-work" type="button" onClick={() => setShowTeslaStory(true)}>
+            <div className="writing-image"><img src="/profile-assets/tesla-village-editorial.png" alt="大山里的特斯拉村彩色文章封面" /><b>ZH</b></div>
             <div className="writing-copy"><span>TESLA / TSPACE · 2022</span><h3>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h3><p>{t.writingRole[1]}</p><small>{t.writingDesc[1]}</small><i>{t.portfolioExcerpt}</i></div>
           </button>
           <a className="writing-card video-work" href="https://xhslink.cn/o/9cXjO92cfpm" target="_blank" rel="noreferrer">

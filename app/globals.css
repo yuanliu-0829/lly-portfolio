@@ -494,3 +494,38 @@ button:focus-visible,a:focus-visible,summary:focus-visible { outline-color:var(-
   .concert-card { padding:34px 24px; }
   .back-to-top { right:14px; bottom:16px; padding:10px 12px; }
 }
+
+/* Readability scale: 16 / 18 / 20 / 28px, plus fluid display headings */
+:root {
+  --type-caption:16px;
+  --type-body:18px;
+  --type-subtitle:20px;
+  --type-card-title:28px;
+}
+.role,.availability,.proof-item span,.section-intro>p,.project-heading>p,.writing-heading>p,.skills-heading>p,.about-copy>p,.social-copy>p,footer>p,
+.primary-button,.tablist button,.dashboard-note>span,.dashboard-note strong,.scale-visual>span,.trend-hint,.trend-axis,.trend-xlabels,.trend-detail>span,.trend-detail p,.trend-detail small,
+.metric-visual span,.project-image>span,.project-card>p,.project-process,.writing-image b,.writing-text-preview b,.writing-copy>span,.writing-copy>p,.writing-copy>i,
+.skills-list summary span,.qr-card>span,.resume-document-mock span,.resume-meta>span,.contact-links a span,.footer-meta,.story-sheet>p,.story-close,
+.deep-dive-heading>p,.lifecycle-flow>div>span,.business-results span,.concert-copy>p,.concert-actions i,.back-to-top {
+  font-size:var(--type-caption);
+}
+.intro,.section-intro>span,.dashboard-note p,.writing-heading>span,.writing-copy small,.skills-list details>p,.about-copy>span,.social-copy>div,.resume-meta p,.story-sheet>span,
+.lifecycle-flow p,.operations-grid p,.concert-copy>span,.concert-actions p,.story-text p {
+  font-size:var(--type-body);
+  line-height:1.72;
+}
+.project-summary {
+  margin-top:20px;
+  color:#dedbd7;
+  font-size:var(--type-body);
+  line-height:1.72;
+}
+.lifecycle-flow strong,.operations-grid strong,.concert-actions strong,.skills-list summary strong,.qr-card>strong {
+  font-size:var(--type-subtitle);
+}
+.writing-copy h3 { font-size:var(--type-card-title); line-height:1.22; }
+.tesla-work .writing-image img { object-position:center; }
+
+@media (max-width:620px) {
+  .project-summary { font-size:var(--type-body); }
+}
