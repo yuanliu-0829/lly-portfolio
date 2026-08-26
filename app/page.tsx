@@ -22,7 +22,7 @@ const content = {
       scale: ['有效用户体系', '从 0 搭建全链路企微私域体系', '5 大获客入口 · 最高 30 天留存率 62%'],
       conversion: ['把流量转成业务结果', '客单价从 1.5 元增长至 8 元', '精准推送、活动运营与成本控制共同驱动转化'],
       efficiency: ['AI 重构服务效率', '从自动应答到会话质检的运营闭环', '减少重复咨询，同时提高服务覆盖与执行质量'],
-      reach: ['大型项目统筹', '把跨部门协作转成可量化交付', '覆盖高校迎新与 KOL 整合营销两类复杂项目'],
+      reach: ['动感地带演唱会企微宣发', '统筹从活动传播到企业微信获客的完整链路', '负责裂变机制、内容触达、企微承接与成本复盘'],
     },
     workEyebrow: 'SELECTED WORK / 作品精选',
     workTitle: '我如何把策略变成结果',
@@ -79,7 +79,7 @@ const content = {
       scale: ['3.6M valid users', 'An end-to-end WeCom system built from zero', '5 acquisition channels · peak 30-day retention of 62%'],
       conversion: ['Turning traffic into outcomes', 'Average order value grew from RMB 1.5 to RMB 8', 'Targeted messaging, campaign design and cost control worked together'],
       efficiency: ['AI-powered service operations', 'From automated replies to conversation QA', 'Reducing repetitive work while improving coverage and execution'],
-      reach: ['Large-scale program delivery', 'Making cross-functional delivery measurable', 'University orientation and KOL campaigns at scale'],
+      reach: ['M-Zone concert WeCom campaign', 'Leading the journey from event promotion to WeCom acquisition', 'Referral design, campaign messaging, WeCom capture and cost review'],
     },
     workEyebrow: 'SELECTED WORK',
     workTitle: 'Turning strategy into outcomes',
@@ -153,11 +153,13 @@ function GrowthTrend({ lang }: { lang: Language }) {
       <div className="trend-chart">
         <div className="trend-axis"><span>4M</span><span>2M</span><span>0</span></div>
         <div className="trend-plot" aria-label={lang === 'zh' ? '累计有效用户增长趋势' : 'Cumulative valid-user growth'}>
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-            <line x1="0" y1="14" x2="100" y2="14" /><line x1="0" y1="53" x2="100" y2="53" /><line x1="0" y1="92" x2="100" y2="92" />
-            <polyline points={polyline} />
-          </svg>
-          {coords.map(({ x, y }, index) => <button key={growthData[index].period} style={{ left: `${x}%`, top: `${y}%` }} className={`${selected === index ? 'active ' : ''}${growthData[index].keyEvent ? 'key-event' : ''}`.trim()} onClick={() => setSelected(index)} aria-label={`${growthData[index].period}: ${format(growthData[index].total)}`} />)}
+          <div className="trend-canvas">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="0" y1="14" x2="100" y2="14" /><line x1="0" y1="53" x2="100" y2="53" /><line x1="0" y1="92" x2="100" y2="92" />
+              <polyline points={polyline} />
+            </svg>
+            {coords.map(({ x, y }, index) => <button key={growthData[index].period} style={{ left: `${x}%`, top: `${y}%` }} className={`${selected === index ? 'active ' : ''}${growthData[index].keyEvent ? 'key-event' : ''}`.trim()} onClick={() => setSelected(index)} aria-label={`${growthData[index].period}: ${format(growthData[index].total)}`} />)}
+          </div>
           <div className="trend-xlabels"><span>2023 Q3</span><span>2025 Q1</span><span>2026 Q1</span><span>08.25</span></div>
         </div>
       </div>
