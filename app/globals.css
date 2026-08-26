@@ -566,3 +566,22 @@ button:focus-visible,a:focus-visible,summary:focus-visible { outline-color:var(-
   line-height:1.65;
   letter-spacing:0;
 }
+
+/* Keep every methodology layer on one shared baseline across the three cards. */
+.projects-grid { align-items:stretch; }
+.project-card {
+  display:grid;
+  grid-template-rows:150px 42px 120px minmax(0,1fr) auto;
+  align-content:stretch;
+}
+.project-image { height:100%; }
+.project-card>p:not(.project-summary) { align-self:start; margin:14px 0 0; }
+.project-card h3 { align-self:start; margin:0; }
+.project-summary { align-self:start; margin:0 0 18px; }
+.project-process { align-self:end; padding-top:8px; }
+
+@media (max-width:620px) {
+  .project-card { grid-template-rows:155px auto auto auto auto; }
+  .project-card>p:not(.project-summary) { margin:18px 0 10px; }
+  .project-card h3 { margin-bottom:16px; }
+}
