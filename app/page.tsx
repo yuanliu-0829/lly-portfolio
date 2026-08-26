@@ -1,6 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { ArrowDownRight, ArrowUp, ExternalLink, MousePointer2, Play } from 'lucide-react';
+import { motion, useReducedMotion } from 'framer-motion';
+import Lenis from 'lenis';
+import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis, type DotItemDotProps } from 'recharts';
 
 type Language = 'zh' | 'en';
 type CaseTab = 'scale' | 'conversion' | 'efficiency' | 'reach';
@@ -191,33 +195,46 @@ const growthData = [
 
 function GrowthTrend({ lang }: { lang: Language }) {
   const [selected, setSelected] = useState(growthData.length - 1);
+  const reduceMotion = useReducedMotion();
   const point = growthData[selected];
-  const coords = growthData.map((item, index) => ({ x: 4 + index * 7.67, y: 92 - (item.total / 3597487) * 78 }));
-  const polyline = coords.map(({ x, y }) => `${x},${y}`).join(' ');
   const format = (value: number) => lang === 'zh' ? `${(value / 10000).toFixed(value >= 1000000 ? 1 : 0)}万` : `${(value / 1000000).toFixed(2)}M`;
+  const renderDot = ({ cx, cy, index }: DotItemDotProps) => {
+    if (typeof cx !== 'number' || typeof cy !== 'number' || typeof index !== 'number') return null;
+    const item = growthData[index];
+    const isSelected = selected === index;
+    const className = ['growth-dot', item.keyEvent ? 'key-event' : '', isSelected ? 'active' : ''].filter(Boolean).join(' ');
+    const selectPoint = () => setSelected(index);
+
+    return <circle cx={cx} cy={cy} r={isSelected ? 7 : 5} className={className} role="button" tabIndex={0} aria-pressed={isSelected} aria-label={`${item.period}: ${format(item.total)}`} onClick={selectPoint} onKeyDown={(event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        selectPoint();
+      }
+    }} />;
+  };
 
   return (
     <div className="trend-visual visual-panel">
       <div className="trend-chart">
-        <div className="trend-axis"><span>4M</span><span>2M</span><span>0</span></div>
-        <div className="trend-plot" aria-label={lang === 'zh' ? '累计有效用户增长趋势' : 'Cumulative valid-user growth'}>
-          <div className="trend-canvas">
-            <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-              <line x1="0" y1="14" x2="100" y2="14" /><line x1="0" y1="53" x2="100" y2="53" /><line x1="0" y1="92" x2="100" y2="92" />
-              <polyline points={polyline} />
-            </svg>
-            {coords.map(({ x, y }, index) => <button key={growthData[index].period} style={{ left: `${x}%`, top: `${y}%` }} className={`${selected === index ? 'active ' : ''}${growthData[index].keyEvent ? 'key-event' : ''}`.trim()} onClick={() => setSelected(index)} aria-label={`${growthData[index].period}: ${format(growthData[index].total)}`} />)}
-          </div>
-          <div className="trend-xlabels"><span>2023 Q3</span><span>2025 Q1</span><span>2026 Q1</span><span>08.25</span></div>
+        <div className="recharts-growth" role="img" aria-label={lang === 'zh' ? '累计有效用户增长折线图' : 'Cumulative valid-user growth line chart'}>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={growthData} margin={{ top: 14, right: 12, bottom: 4, left: 4 }} accessibilityLayer>
+              <CartesianGrid vertical={false} stroke="#c5c0bb" strokeDasharray="3 5" />
+              <XAxis dataKey="period" interval="preserveStartEnd" minTickGap={42} tickLine={false} axisLine={false} tick={{ fill: '#66676b', fontSize: 16 }} />
+              <YAxis domain={[0, 4000000]} ticks={[0, 2000000, 4000000]} tickFormatter={(value) => `${Number(value) / 1000000}M`} tickLine={false} axisLine={false} width={52} tick={{ fill: '#66676b', fontSize: 16 }} />
+              <Tooltip formatter={(value) => [format(Number(value)), lang === 'zh' ? '累计有效用户' : 'Cumulative users']} contentStyle={{ border: '1px solid #c9c4bf', background: '#faf9f7', borderRadius: 0, fontSize: 16 }} cursor={{ stroke: '#d3a0aa', strokeWidth: 1 }} />
+              <Line type="linear" dataKey="total" stroke="#3b3c40" strokeWidth={3} dot={renderDot} activeDot={false} isAnimationActive={false} />
+            </LineChart>
+          </ResponsiveContainer>
         </div>
       </div>
-      <p className="trend-hint">↗ {lang === 'zh' ? '点击曲线节点，了解各阶段数据与运营动作' : 'Select a point to explore the data and operational action'}</p>
-      <div className="trend-detail">
+      <p className="trend-hint"><MousePointer2 size={16} aria-hidden="true" />{lang === 'zh' ? '点击曲线节点，了解各阶段数据与运营动作' : 'Select a point to explore the data and operational action'}</p>
+      <motion.div key={point.period} className="trend-detail" initial={reduceMotion ? false : { opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .22, ease: 'easeOut' }}>
         <span>{point.period} · {selected === growthData.length - 1 ? (lang === 'zh' ? '截至当日实际值' : 'actual as of this date') : (lang === 'zh' ? '季度末' : 'quarter end')}</span>
         <strong>{format(point.total)}</strong>
         <div><p>{lang === 'zh' ? '累计有效用户' : 'CUMULATIVE USERS'}</p>{point.added && <p>{lang === 'zh' ? `当期新增 ${format(point.added)}` : `NEW ${format(point.added)}`}</p>}{point.retention && <p>{lang === 'zh' ? `30天留存 ${point.retention}%` : `30-DAY RETENTION ${point.retention}%`}</p>}</div>
         {(point.eventZh || point.eventEn) && <small>● {lang === 'zh' ? point.eventZh : point.eventEn}</small>}
-      </div>
+      </motion.div>
     </div>
   );
 }
@@ -320,6 +337,17 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const lenis = new Lenis({
+      autoRaf: true,
+      duration: 1.05,
+      smoothWheel: true,
+      anchors: { offset: -76 },
+    });
+    return () => lenis.destroy();
+  }, []);
+
   return (
     <main>
       <header className="topbar">
@@ -336,7 +364,7 @@ export default function Home() {
           <p className="role"><span />{t.role}</p>
           <h1>{t.title[0]}<br /><em>{t.title[1]}</em></h1>
           <p className="intro">{t.intro}</p>
-          <div className="hero-actions"><a className="primary-button" href="#work">{t.cta}<span>↘</span></a><span className="availability">● {t.location}</span></div>
+          <div className="hero-actions"><a className="primary-button" href="#work">{t.cta}<ArrowDownRight size={18} aria-hidden="true" /></a><span className="availability">● {t.location}</span></div>
         </div>
         <figure className="portrait-wrap"><img src="/profile-assets/cila-portrait.jpg" alt="刘力源 Cila 的个人肖像" /><figcaption><span>01</span> CILA / LIU LIYUAN<br />DIGITAL MARKETING</figcaption></figure>
         <div className="signal-line" aria-hidden="true"><span>CONTENT</span><i /><span>DATA</span><i /><span>GROWTH</span></div>
@@ -398,7 +426,7 @@ export default function Home() {
             <div className="writing-copy"><span>TESLA / TSPACE · 2022</span><h3>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h3><p>{t.writingRole[1]}</p><small>{t.writingDesc[1]}</small><i>{t.portfolioExcerpt}</i></div>
           </button>
           <a className="writing-card video-work" href="https://xhslink.cn/o/9cXjO92cfpm" target="_blank" rel="noreferrer">
-            <div className="writing-image"><img src="/profile-assets/robot-video-cover.webp" alt="2026 世界机器人大会视频真实封面" /><b>▶</b></div>
+            <div className="writing-image"><img src="/profile-assets/robot-video-cover.webp" alt="2026 世界机器人大会视频真实封面" /><b><Play size={17} fill="currentColor" aria-hidden="true" /></b></div>
             <div className="writing-copy"><span>XIAOHONGSHU · 2026</span><h3>{lang === 'zh' ? '2026 世界机器人大会深入带逛' : 'Inside the 2026 World Robot Conference'}</h3><p>{t.writingRole[2]}</p><small>{t.writingDesc[2]}</small><i>{t.watchVideo}</i></div>
           </a>
         </div>
@@ -424,14 +452,14 @@ export default function Home() {
           <a className="resume-card" href={`mailto:lly156156186292022@163.com?subject=${encodeURIComponent(lang === 'zh' ? '索取刘力源 Cila 的完整简历' : 'Request for Cila Liu’s full résumé')}`}>
             <div className="resume-document-mock" aria-hidden="true"><strong>CILA LIU</strong><i /><i /><i /><i /><i /><span>RÉSUMÉ</span></div>
             <div className="resume-meta"><span>RÉSUMÉ / PDF</span><strong>{t.resume}</strong><p>{t.resumeNote}</p></div>
-            <i aria-hidden="true">↗</i>
+            <i aria-hidden="true"><ExternalLink size={22} /></i>
           </a>
         </div>
       </section>
 
       <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><div className="contact-links"><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a></div><div className="footer-meta"><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
 
-      <a className="back-to-top" href="#top" aria-label={lang === 'zh' ? '回到顶部' : 'Back to top'}><span>↑</span>{lang === 'zh' ? '顶部' : 'TOP'}</a>
+      <a className="back-to-top" href="#top" aria-label={lang === 'zh' ? '回到顶部' : 'Back to top'}><ArrowUp size={16} aria-hidden="true" />{lang === 'zh' ? '顶部' : 'TOP'}</a>
 
       {showWicStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '中国日报英文作品留存节选' : 'Archived China Daily article excerpt'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowWicStory(false)} onClick={() => setShowWicStory(false)}>
         <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
