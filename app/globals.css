@@ -529,3 +529,40 @@ button:focus-visible,a:focus-visible,summary:focus-visible { outline-color:var(-
 @media (max-width:620px) {
   .project-summary { font-size:var(--type-body); }
 }
+
+/* Method cards use one restrained hierarchy; AI metric labels keep readable contrast. */
+.ai-metrics>div:nth-child(1) span { color:#5e5558; }
+.project-card>p:not(.project-summary) {
+  margin:22px 0 10px;
+  color:#b7b8b5;
+  font-family:var(--font-body);
+  font-size:var(--type-caption);
+  font-weight:650;
+  line-height:1.5;
+  letter-spacing:.03em;
+}
+.project-card h3 {
+  font-family:var(--font-body);
+  font-size:var(--type-card-title);
+  font-weight:760;
+  line-height:1.25;
+  letter-spacing:-.025em;
+}
+.project-summary {
+  margin:18px 0 20px;
+  color:#dedbd7;
+  font-family:var(--font-body);
+  font-size:var(--type-body);
+  font-weight:400;
+  line-height:1.72;
+  letter-spacing:0;
+}
+.project-process {
+  padding-top:10px;
+  color:#bfc0bd;
+  font-family:var(--font-body);
+  font-size:var(--type-caption);
+  font-weight:500;
+  line-height:1.65;
+  letter-spacing:0;
+}
