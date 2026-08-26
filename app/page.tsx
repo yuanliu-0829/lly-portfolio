@@ -5,11 +5,6 @@ import { useEffect, useState } from 'react';
 type Language = 'zh' | 'en';
 type CaseTab = 'scale' | 'conversion' | 'efficiency' | 'reach';
 
-function BilingualEyebrow({ text }: { text: string }) {
-  const [english, chinese] = text.split(' / ');
-  return chinese && /[\u3400-\u9fff]/.test(chinese) ? <>{english}<span className="eyebrow-zh">{chinese}</span></> : <>{text}</>;
-}
-
 const content = {
   zh: {
     nav: ['关于我', '案例', '作品', '能力', '联系'],
@@ -348,7 +343,7 @@ export default function Home() {
       </section>
 
       <section className="case-study" id="work">
-        <div className="section-intro"><p><BilingualEyebrow text={t.featured} /></p><h2>{t.caseTitle}</h2><span>{t.caseLead}</span></div>
+        <div className="section-intro"><p>{t.featured}</p><h2>{t.caseTitle}</h2><span>{t.caseLead}</span></div>
         <div className="case-dashboard" id="case-study">
           <div className="tablist" role="tablist" aria-label="案例数据维度">{tabKeys.map((key, index) => <button role="tab" aria-selected={activeTab === key} className={activeTab === key ? 'active' : ''} onClick={() => setActiveTab(key)} key={key}><span>0{index + 1}</span>{t.caseLabels[index]}</button>)}</div>
           <div className="dashboard-body">
@@ -358,17 +353,17 @@ export default function Home() {
         </div>
         <div className="case-deep-dive">
           <article className="lifecycle-card">
-            <div className="deep-dive-heading"><p><BilingualEyebrow text={lang === 'zh' ? 'LIFECYCLE SOP / 客户生命周期' : 'LIFECYCLE SOP'} /></p><h3>{lang === 'zh' ? '把新增用户变成可持续运营的关系' : 'Turning acquisition into an operating relationship'}</h3><span>{lang === 'zh' ? '从进入企微到服务复盘，用同一套标准连接增长、转化与体验。' : 'One operating standard connects acquisition, conversion, service and learning.'}</span></div>
+            <div className="deep-dive-heading"><p>{lang === 'zh' ? 'LIFECYCLE SOP / 客户生命周期' : 'LIFECYCLE SOP'}</p><h3>{lang === 'zh' ? '把新增用户变成可持续运营的关系' : 'Turning acquisition into an operating relationship'}</h3><span>{lang === 'zh' ? '从进入企微到服务复盘，用同一套标准连接增长、转化与体验。' : 'One operating standard connects acquisition, conversion, service and learning.'}</span></div>
             <div className="lifecycle-flow">{lifecycleStages.map(([title, description], index) => <div key={title}><span>0{index + 1}</span><strong>{title}</strong><p>{description}</p></div>)}</div>
           </article>
 
           <article className="operations-card">
-            <div className="deep-dive-heading"><p><BilingualEyebrow text={lang === 'zh' ? 'TEAM OPERATING MODEL / 团队管理模式' : 'TEAM OPERATING MODEL'} /></p><h3>{lang === 'zh' ? '集中团队的四层管理机制' : 'A four-layer model for centralized operations'}</h3><span>{lang === 'zh' ? '统一目标、工作流、标准和质量反馈，让有限团队把精力集中在高价值判断与复杂问题处理上。' : 'Shared goals, workflows, standards and quality feedback keep a lean team focused on judgment and complex cases.'}</span></div>
+            <div className="deep-dive-heading"><p>{lang === 'zh' ? 'TEAM OPERATING MODEL / 团队管理模式' : 'TEAM OPERATING MODEL'}</p><h3>{lang === 'zh' ? '集中团队的四层管理机制' : 'A four-layer model for centralized operations'}</h3><span>{lang === 'zh' ? '统一目标、工作流、标准和质量反馈，让有限团队把精力集中在高价值判断与复杂问题处理上。' : 'Shared goals, workflows, standards and quality feedback keep a lean team focused on judgment and complex cases.'}</span></div>
             <div className="operations-grid">{operatingModel.map(([title, description]) => <div key={title}><strong>{title}</strong><p>{description}</p></div>)}</div>
           </article>
 
           <article className="concert-card">
-            <div className="concert-copy"><p><BilingualEyebrow text={lang === 'zh' ? 'M-ZONE LIVE / 动感地带演唱会' : 'M-ZONE CONCERT'} /></p><h3>{lang === 'zh' ? '用裂变机制把演唱会热度沉淀为私域用户' : 'Turning concert attention into private-domain users'}</h3><span>{lang === 'zh' ? '我把项目拆成“传播—裂变—企微承接—复盘”四段，将活动内容、用户路径与成本目标放进同一套运营链路。' : 'I connected promotion, referral, WeCom capture and review into one operating journey, aligning content, user flow and acquisition cost.'}</span></div>
+            <div className="concert-copy"><p>M-ZONE LIVE / {lang === 'zh' ? '动感地带演唱会' : 'M-ZONE CONCERT'}</p><h3>{lang === 'zh' ? '用裂变机制把演唱会热度沉淀为私域用户' : 'Turning concert attention into private-domain users'}</h3><span>{lang === 'zh' ? '我把项目拆成“传播—裂变—企微承接—复盘”四段，将活动内容、用户路径与成本目标放进同一套运营链路。' : 'I connected promotion, referral, WeCom capture and review into one operating journey, aligning content, user flow and acquisition cost.'}</span></div>
             <div className="concert-actions">
               {(lang === 'zh' ? [
                 ['01', '设计公私域转化链路', '围绕郑州动感地带演唱会 IP，将校园内容扩散、用户互动和企业微信沉淀串成一条转化路径。'],
@@ -387,12 +382,12 @@ export default function Home() {
       </section>
 
       <section className="projects-section">
-        <div className="project-heading"><p><BilingualEyebrow text={t.workEyebrow} /></p><h2>{t.workTitle}</h2></div>
-        <div className="projects-grid">{t.projects.map((project, index) => <article className="project-card" key={project[0]}><div className="project-image"><img src={projectImages[index]} alt="" /><span>0{index + 1}</span></div><p><BilingualEyebrow text={project[1]} /></p><h3>{project[0]}</h3><p className="project-summary">{project[2]}</p><strong className="project-process">{project[3]}</strong></article>)}</div>
+        <div className="project-heading"><p>{t.workEyebrow}</p><h2>{t.workTitle}</h2></div>
+        <div className="projects-grid">{t.projects.map((project, index) => <article className="project-card" key={project[0]}><div className="project-image"><img src={projectImages[index]} alt="" /><span>0{index + 1}</span></div><p>{project[1]}</p><h3>{project[0]}</h3><p className="project-summary">{project[2]}</p><strong className="project-process">{project[3]}</strong></article>)}</div>
       </section>
 
       <section className="writing-section" id="writing">
-        <div className="writing-heading"><p><BilingualEyebrow text={t.writingEyebrow} /></p><h2>{t.writingTitle}</h2><span>{t.writingIntro}</span></div>
+        <div className="writing-heading"><p>{t.writingEyebrow}</p><h2>{t.writingTitle}</h2><span>{t.writingIntro}</span></div>
         <div className="writing-grid">
           <button className="writing-card" type="button" onClick={() => setShowWicStory(true)}>
             <div className="writing-text-preview" lang="en"><b>EN</b><p>A new pattern of cultural and creative industry based on technology has been vigorously developed in recent years.</p></div>
@@ -410,17 +405,17 @@ export default function Home() {
       </section>
 
       <section className="skills-section" id="skills">
-        <div className="skills-heading"><p><BilingualEyebrow text={t.abilitiesEyebrow} /></p><h2>{t.abilitiesTitle}</h2></div>
+        <div className="skills-heading"><p>{t.abilitiesEyebrow}</p><h2>{t.abilitiesTitle}</h2></div>
         <div className="skills-list">{t.abilities.map(([title, description], index) => <details key={title} open={index === 0}><summary><span>0{index + 1}</span><strong>{title}</strong><i>+</i></summary><p>{description}</p></details>)}</div>
       </section>
 
       <section className="about-section" id="about">
         <div className="about-portrait"><img src="/profile-assets/cila-portrait.jpg" alt="Cila" /><div className="portrait-crop" aria-hidden="true" /></div>
-        <div className="about-copy"><p><BilingualEyebrow text={t.aboutEyebrow} /></p><h2>{t.aboutTitle}</h2>{t.aboutBody.map(paragraph => <span key={paragraph}>{paragraph}</span>)}</div>
+        <div className="about-copy"><p>{t.aboutEyebrow}</p><h2>{t.aboutTitle}</h2>{t.aboutBody.map(paragraph => <span key={paragraph}>{paragraph}</span>)}</div>
       </section>
 
       <section className="social-section">
-        <div className="social-copy"><p><BilingualEyebrow text="XIAOHONGSHU / @源饱饱Cila" /></p><h2>{t.socialTitle}</h2><div>{t.socialStats.map(stat => <span key={stat}>{stat}</span>)}</div></div>
+        <div className="social-copy"><p>XIAOHONGSHU / @源饱饱Cila</p><h2>{t.socialTitle}</h2><div>{t.socialStats.map(stat => <span key={stat}>{stat}</span>)}</div></div>
         <div className="social-aside">
           <a className="qr-card" href="/profile-assets/xiaohongshu-qr.jpg" target="_blank" rel="noreferrer" aria-label="打开小红书二维码原图">
             <div className="qr-code-zoom"><img src="/profile-assets/xiaohongshu-qr.jpg" alt="小红书账号源饱饱 Cila 的二维码" /></div>
@@ -434,7 +429,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact"><p><BilingualEyebrow text={t.contactLabel} /></p><h2>{t.contactTitle}</h2><div className="contact-links"><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a></div><div className="footer-meta"><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
+      <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><div className="contact-links"><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a></div><div className="footer-meta"><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
 
       <a className="back-to-top" href="#top" aria-label={lang === 'zh' ? '回到顶部' : 'Back to top'}><span>↑</span>{lang === 'zh' ? '顶部' : 'TOP'}</a>
 
