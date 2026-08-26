@@ -124,6 +124,54 @@ const content = {
 
 const tabKeys: CaseTab[] = ['scale', 'conversion', 'efficiency', 'reach'];
 const projectImages = ['/profile-assets/method-growth-system.png', '/profile-assets/method-tech-translation.png', '/profile-assets/method-program-delivery.png'];
+const wicStoryParagraphs = [
+  'A new pattern of cultural and creative industry based on technology has been vigorously developed in recent years.',
+  "Implementing digital culture industry and accelerating development of new types of cultural enterprises, business patterns and consumption models are included in China's 14th Five-Year Plan (2021-25).",
+  'For small- and medium-sized cultural enterprises, it is almost a must to follow the trend of digital industrialization and industrial digitalization and to promote application of emerging information technologies in production, dissemination and consumption of cultural and creative products.',
+  'Using digital tools to increase the creativity and influence of traditional techniques in the internet age has become promising.',
+  'In response to the new trend, quite a number of emerging intangible cultural heritage brands have risen up in recent years and a new generation of inheritors is getting online to develop markets for traditional crafts.',
+  'For example, “Ru Shan Ming”, a new intangible cultural heritage brand focusing on Chinese Ru porcelain, was established in 2017. It has gained nearly 200,000 fans.',
+  "Li Keming is the founder of the brand. He returned to his hometown Ruzhou in Central China's Henan Province after graduation and learned the skills of making Ru porcelain from his parents, making him an inheritor of the traditional craft.",
+  'He integrated creative design into traditional Ru porcelain products and brought them online through crowdfunding and livestreaming.',
+  "The “Chuan Yue” comb brand, created by Guo Suixi, is an integration of tradition and fashion. Guo returned to her hometown Changzhou in East China's Jiangsu Province after six years of work in Japan.",
+  'She said that more and more young people are falling in love with traditional intangible heritage culture and that she uses livestreaming to promote her products.',
+  'Thanks to e-commerce platforms, more and more emerging intangible cultural heritage brands have gone popular and have created a trend of Chinese fads developing among young people.',
+];
+const teslaStorySections = [
+  {
+    title: '',
+    paragraphs: [
+      '云南一处群山脚下，山高谷低，有 10 多个自然村落，各村落沿山谷分散而居。攀枝戛村，便坐落在这里。',
+      '这里，有世界目前最高的观光电梯；这里，有灯光秀助兴的篝火晚会；这里，有朴实的村民，也有前瞻的科技；这里，还有 30 多辆特斯拉……',
+    ],
+  },
+  {
+    title: '绿水青山才是真正的金山银山',
+    paragraphs: [
+      '故事要从一个特殊的人说起：蔡哥。12 岁，蔡哥就随父亲出川，在外一待就是 20 年。蔡哥对于老家的印象，只剩下一张泛黄的老照片，但他心中总是放不下故乡的那一抹绿色。直到 2015 年，北盘江大桥落建，让老家与外界的路联通，这燃起了蔡哥回乡创业的热血。',
+      '蔡哥刚刚回到村庄时，村子还在致富的路上奋力前行。当选村干部后，蔡哥四处考察，全面了解村中优势资源，与领导和专家共同研讨后，最终决定发展乡村旅游，以此作为攀枝戛村未来长足发展的产业根基。经过规划、招商、开发……昔日闭塞的小村庄，逐渐成为景色秀丽的度假区。',
+    ],
+  },
+  {
+    title: '把好的产品分享给别人，是一件快乐的事！',
+    paragraphs: [
+      '一次偶然的机会，蔡哥驾驶朋友的特斯拉前往成都、重庆、西双版纳等地。沿途随处可见的特斯拉超级充电桩，让蔡哥赞叹电动车的补能便捷；经济又贴心的用车体验，让他决定购入一辆特斯拉 Model 3。',
+      '亲身体验过之后，蔡哥开始向身边几乎每一位朋友推荐特斯拉。在他看来，将好的东西分享给朋友，是一件很快乐的事情。',
+      '然而，作为新兴科技产品，电动汽车最初没有立刻获得攀枝戛村村民的欢迎。为让村民们更加熟悉特斯拉，蔡哥会主动介绍电动汽车，带朋友在山路上体验驾驶，介绍官方置换服务，也向孩子们展示特斯拉的灯光秀功能。',
+      '成功“种草”后，蔡哥陪同乡亲们共同前往提车，并热心地帮助他们熟悉电动汽车，还专门组建了村内车友群，一起分享日常用车的技巧和趣事。',
+      '在村民口口相传的引荐下，攀枝戛村共有 30 多台特斯拉，加上下定的，总计有 40 多台。人们也打趣地将攀枝戛村称为“特斯拉村”。',
+    ],
+  },
+  {
+    title: '特斯拉嘛，就是我们村的气氛组！',
+    paragraphs: [
+      '在乡村旅游发展之初，由于村内客房数量不多，常常无法满足越来越大的客流量。当客房不够时，村民会将自己的特斯拉开过来，打开露营模式，为旅客搭建起舒适的温馨驿站。久而久之，“特斯拉主题民宿”成了攀枝戛村的特色旅游项目。',
+      '蔡哥也希望借此契机让攀枝戛村走出深山，带领村民们共同致富。于是，他开始着手打造以“特斯拉”为主题的酒店和露营基地，吸引媒体前来一探究竟。报道提升了村子的整体形象，也为攀枝戛村打响了知名度。',
+      '蔡哥说：“现在的攀枝戛村，只是个开始。选择了特斯拉，就是选择了可持续发展。我们村的发展理念，也是保护绿水青山，造福子孙后代。”',
+      '以自然为纸，科技为笔，云南攀枝戛村描绘了一幅乡村与科技和谐融汇而成的美丽图景，让人们心生对未来的无限憧憬。',
+    ],
+  },
+];
 
 const growthData = [
   { period: '2023 Q3', total: 998374, added: null, retention: null, eventZh: '盘点存量企微用户，明确累计有效用户口径，建立增长基线。', eventEn: 'Audited existing WeCom users, defined the valid-user metric and established the baseline.' },
@@ -318,15 +366,15 @@ export default function Home() {
             <div className="concert-copy"><p>M-ZONE LIVE / {lang === 'zh' ? '动感地带演唱会' : 'M-ZONE CONCERT'}</p><h3>{lang === 'zh' ? '用裂变机制把演唱会热度沉淀为私域用户' : 'Turning concert attention into private-domain users'}</h3><span>{lang === 'zh' ? '我把项目拆成“传播—裂变—企微承接—复盘”四段，将活动内容、用户路径与成本目标放进同一套运营链路。' : 'I connected promotion, referral, WeCom capture and review into one operating journey, aligning content, user flow and acquisition cost.'}</span></div>
             <div className="concert-actions">
               {(lang === 'zh' ? [
-                ['01', '定义转化目标', '把演唱会传播目标转成可追踪的企微新增，并将单客成本设为核心判断指标。'],
-                ['02', '设计裂变路径', '围绕演唱会权益设计分享机制，让用户从活动参与自然进入企微承接。'],
-                ['03', '组织承接链路', '对齐活动页面、触达话术与企微服务流程，减少传播到留资之间的断点。'],
-                ['04', '持续复盘优化', '跟踪入口新增与成本变化，调整素材、规则和触达节奏，将获客成本控制在 4 元/人。'],
+                ['01', '设计公私域转化链路', '围绕郑州动感地带演唱会 IP，将校园内容扩散、用户互动和企业微信沉淀串成一条转化路径。'],
+                ['02', '组织校园 KOL 矩阵', '联动 20 位校园 KOL 形成传播矩阵，以多账号协同扩大演唱会内容在目标学生群体中的覆盖。'],
+                ['03', '承接企微精准用户', '把 KOL 带来的公域关注导向企业微信，在活动传播过程中沉淀 5000+ 精准企微用户。'],
+                ['04', '用三类指标联合复盘', '同时检查 36 万+ 转评赞、5000+ 精准用户和 4 元/人获客成本，验证声量是否真正转成私域资产。'],
               ] : [
-                ['01', 'Define conversion', 'Turn concert promotion into trackable WeCom acquisition with cost per user as the core decision metric.'],
-                ['02', 'Design referral', 'Build a benefit-led sharing mechanism that moves participants naturally into WeCom.'],
-                ['03', 'Coordinate capture', 'Align the campaign page, messaging and service flow to reduce drop-off between sharing and lead capture.'],
-                ['04', 'Review and improve', 'Track acquisition and cost by entry point, then adjust creative, rules and cadence to hold CAC at RMB 4.'],
+                ['01', 'Design the public-to-private path', 'Connect campus content distribution, audience interaction and WeCom capture around the Zhengzhou M-Zone concert IP.'],
+                ['02', 'Coordinate a campus KOL matrix', 'Bring 20 campus KOLs into one distribution matrix to expand reach among target student communities.'],
+                ['03', 'Capture qualified WeCom users', 'Move public-platform attention into WeCom and retain more than 5,000 qualified users during the campaign.'],
+                ['04', 'Review three outcome layers', 'Evaluate 360K+ engagements, 5,000+ qualified users and RMB 4 CAC together to test whether reach became a private-domain asset.'],
               ]).map(([step, title, description]) => <div key={step}><i>{step}</i><strong>{title}</strong><p>{description}</p></div>)}
             </div>
           </article>
@@ -342,11 +390,11 @@ export default function Home() {
         <div className="writing-heading"><p>{t.writingEyebrow}</p><h2>{t.writingTitle}</h2><span>{t.writingIntro}</span></div>
         <div className="writing-grid">
           <button className="writing-card" type="button" onClick={() => setShowWicStory(true)}>
-            <div className="writing-image"><img src="/profile-assets/wic-excerpt.jpg" alt="世界互联网大会英文文章正文精选段落" /><b>EN</b></div>
+            <div className="writing-text-preview" lang="en"><b>EN</b><p>A new pattern of cultural and creative industry based on technology has been vigorously developed in recent years.</p></div>
             <div className="writing-copy"><span>WORLD INTERNET CONFERENCE · 2021</span><h3>Digitalization Boosts Development of Cultural, Creative Industry</h3><p>{t.writingRole[0]}</p><small>{t.writingDesc[0]}</small><i>{t.archivedExcerpt}</i></div>
           </button>
           <button className="writing-card" type="button" onClick={() => setShowTeslaStory(true)}>
-            <div className="writing-image"><img src="/profile-assets/tesla-village-editorial.png" alt="山村、新能源汽车与充电设施的纪实风格画面" /><b>ZH</b></div>
+            <div className="writing-text-preview"><b>ZH</b><p>云南一处群山脚下，山高谷低，有 10 多个自然村落，各村落沿山谷分散而居。攀枝戛村，便坐落在这里。</p></div>
             <div className="writing-copy"><span>TESLA / TSPACE · 2022</span><h3>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h3><p>{t.writingRole[1]}</p><small>{t.writingDesc[1]}</small><i>{t.portfolioExcerpt}</i></div>
           </button>
           <a className="writing-card video-work" href="https://xhslink.cn/o/9cXjO92cfpm" target="_blank" rel="noreferrer">
@@ -391,10 +439,7 @@ export default function Home() {
           <p>CHINA DAILY / WORLD INTERNET CONFERENCE · 2021</p>
           <h2>Digitalization Boosts Development of Cultural, Creative Industry</h2>
           <span>{lang === 'zh' ? '英文选题与编辑 · 作品集留存节选（原发布页当前无法稳定访问）' : 'English commissioning and editing · archived portfolio excerpt (the original page is currently unavailable)'}</span>
-          <div className="story-pages wic-story-pages">
-            <div className="wic-page-start"><img src="/profile-assets/wic-story-1.jpg" alt={lang === 'zh' ? '中国日报英文作品正文第一页' : 'First archived page of the China Daily article'} /></div>
-            <div className="wic-page-end"><img src="/profile-assets/wic-story-2.jpg" alt={lang === 'zh' ? '中国日报英文作品正文第二页' : 'Second archived page of the China Daily article'} /></div>
-          </div>
+          <article className="story-text" lang="en">{wicStoryParagraphs.slice(0, 3).map(paragraph => <p key={paragraph}>{paragraph}</p>)}<h3>Emerging intangible heritage cultural brands</h3>{wicStoryParagraphs.slice(3).map(paragraph => <p key={paragraph}>{paragraph}</p>)}</article>
         </div>
       </div>}
 
@@ -403,11 +448,8 @@ export default function Home() {
           <button className="story-close" type="button" onClick={() => setShowTeslaStory(false)}>{lang === 'zh' ? '关闭' : 'Close'} ×</button>
           <p>TESLA / TSPACE · 2022</p>
           <h2>{lang === 'zh' ? '大山里的“特斯拉村”' : 'The “Tesla Village” in the Mountains'}</h2>
-          <span>{lang === 'zh' ? '车主采访、品牌故事撰写 · 原作品集全文' : 'Owner interview and brand storytelling · full portfolio excerpt'}</span>
-          <div className="story-pages">
-            <div className="story-page-crop"><img src="/profile-assets/tesla-story-1.jpg" alt={lang === 'zh' ? '特斯拉村故事原文开篇' : 'Opening of the Tesla Village story'} /></div>
-            {[2, 3].map(page => <img key={page} src={`/profile-assets/tesla-story-${page}.jpg`} alt={`${lang === 'zh' ? '特斯拉村故事原文第' : 'Tesla Village story page '}${page}${lang === 'zh' ? '页' : ''}`} />)}
-          </div>
+          <span>{lang === 'zh' ? '车主采访、品牌故事撰写 · 作品集文本节选' : 'Owner interview and brand storytelling · portfolio text excerpt'}</span>
+          <article className="story-text">{teslaStorySections.map(section => <section key={section.title || 'opening'}>{section.title && <h3>{section.title}</h3>}{section.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</section>)}</article>
         </div>
       </div>}
     </main>
