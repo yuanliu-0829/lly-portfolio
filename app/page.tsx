@@ -221,6 +221,32 @@ export default function Home() {
   const [showTeslaStory, setShowTeslaStory] = useState(false);
   const t = content[lang];
   const note = t.caseNotes[activeTab];
+  const lifecycleStages = lang === 'zh' ? [
+    ['获客进入', 'APP、小程序、公众号等 5 大入口与智能获客码'],
+    ['识别分层', '重构客户标签体系，统一有效用户口径'],
+    ['激活培育', '生命周期 SOP、运营话术与标准化模板'],
+    ['转化承接', '精准推送与系列活动，已确认转化率 5%'],
+    ['服务响应', '7×24 小时智能应答，复杂问题自动转人工'],
+    ['质量复盘', 'AI 会话质检覆盖率由 15% 提升至 100%'],
+  ] : [
+    ['Acquire', 'Five entry points across app, mini program and official accounts, plus smart acquisition codes'],
+    ['Identify', 'A rebuilt tagging system and one valid-user definition'],
+    ['Nurture', 'Lifecycle SOPs, operating scripts and standardized templates'],
+    ['Convert', 'Targeted messaging and campaign series with a confirmed 5% conversion rate'],
+    ['Serve', '24/7 automated answers with handoff for complex cases'],
+    ['Improve', 'AI conversation QA coverage expanded from 15% to 100%'],
+  ];
+  const operatingModel = lang === 'zh' ? [
+    ['运营规范', '统一账号、话术、模板与培训机制'],
+    ['托管平台', '将分散执行收拢到集中运营平台'],
+    ['集中团队', '以固定节奏承接服务、活动与复盘'],
+    ['AI 质检', '从抽检升级为全量会话质量闭环'],
+  ] : [
+    ['Standards', 'Unified account, script, template and training practices'],
+    ['Managed platform', 'Moved fragmented execution into one operating surface'],
+    ['Central team', 'A fixed cadence for service, campaigns and review'],
+    ['AI quality', 'Upgraded sampled QA into a full conversation loop'],
+  ];
 
   return (
     <main>
@@ -249,6 +275,28 @@ export default function Home() {
             <div className="dashboard-note"><span>DATA VIEW / 0{tabKeys.indexOf(activeTab) + 1}</span><h3>{note[0]}</h3><strong>{note[1]}</strong><p>{note[2]}</p></div>
             <CaseVisual tab={activeTab} lang={lang} />
           </div>
+        </div>
+        <div className="case-deep-dive">
+          <article className="lifecycle-card">
+            <div className="deep-dive-heading"><p>{lang === 'zh' ? 'LIFECYCLE SOP / 客户生命周期' : 'LIFECYCLE SOP'}</p><h3>{lang === 'zh' ? '把新增用户变成可持续运营的关系' : 'Turning acquisition into an operating relationship'}</h3><span>{lang === 'zh' ? '从进入企微到服务复盘，用同一套标准连接增长、转化与体验。' : 'One operating standard connects acquisition, conversion, service and learning.'}</span></div>
+            <div className="lifecycle-flow">{lifecycleStages.map(([title, description], index) => <div key={title}><span>0{index + 1}</span><strong>{title}</strong><p>{description}</p></div>)}</div>
+          </article>
+
+          <article className="operations-card">
+            <div className="deep-dive-heading"><p>{lang === 'zh' ? 'CENTRAL OPERATIONS / 集中运营' : 'CENTRAL OPERATIONS'}</p><h3>{lang === 'zh' ? '从分散执行到集中运营模式' : 'From fragmented execution to a centralized model'}</h3><span>{lang === 'zh' ? '通过规范、平台、团队与 AI 质检，让运营动作可复制、可监控、可复盘。' : 'Standards, platform, team and AI QA make execution repeatable and measurable.'}</span></div>
+            <div className="operations-grid">{operatingModel.map(([title, description]) => <div key={title}><strong>{title}</strong><p>{description}</p></div>)}</div>
+            <div className="business-results">
+              <div><strong>¥1.5 → ¥8</strong><span>{lang === 'zh' ? '客单价' : 'AVERAGE ORDER VALUE'}</span></div>
+              <div><strong>+430%</strong><span>{lang === 'zh' ? '客单价增幅' : 'AOV UPLIFT'}</span></div>
+              <div><strong>5%</strong><span>{lang === 'zh' ? '精准推送转化率' : 'TARGETED PUSH CVR'}</span></div>
+              <div><strong>¥4–6</strong><span>{lang === 'zh' ? '重点项目单客成本' : 'KEY CAMPAIGN CAC'}</span></div>
+            </div>
+          </article>
+
+          <article className="concert-card">
+            <div className="concert-copy"><p>M-ZONE LIVE / {lang === 'zh' ? '动感地带演唱会' : 'M-ZONE CONCERT'}</p><h3>{lang === 'zh' ? '用裂变机制把演唱会热度沉淀为私域用户' : 'Turning concert attention into private-domain users'}</h3><span>{lang === 'zh' ? '目前已确认获客成本；活动曝光、参与、新增企微与收入数据补齐后，将加入完整漏斗。' : 'CAC is confirmed. Exposure, participation, WeCom acquisition and revenue will complete the funnel once supplied.'}</span></div>
+            <div className="concert-result"><strong>¥4</strong><span>{lang === 'zh' ? '裂变获客成本 / 人' : 'ACQUISITION COST / USER'}</span><div className="concert-process"><i /><span>{lang === 'zh' ? '活动裂变' : 'Campaign referral'}</span><i /><span>{lang === 'zh' ? '企微承接' : 'WeCom capture'}</span><i /><span>{lang === 'zh' ? '成本复盘' : 'Cost review'}</span></div></div>
+          </article>
         </div>
       </section>
 
@@ -301,6 +349,8 @@ export default function Home() {
       </section>
 
       <footer id="contact"><p>{t.contactLabel}</p><h2>{t.contactTitle}</h2><div className="contact-links"><a href="mailto:lly156156186292022@163.com"><span>{t.email}</span>lly156156186292022@163.com ↗</a></div><div className="footer-meta"><span>© 2026 CILA LIU</span><span>BEIJING · CHINA</span><span>STAY CURIOUS</span></div></footer>
+
+      <a className="back-to-top" href="#top" aria-label={lang === 'zh' ? '回到顶部' : 'Back to top'}><span>↑</span>{lang === 'zh' ? '顶部' : 'TOP'}</a>
 
       {showWicStory && <div className="story-modal" role="dialog" aria-modal="true" aria-label={lang === 'zh' ? '中国日报英文作品留存节选' : 'Archived China Daily article excerpt'} tabIndex={-1} onKeyDown={(event) => event.key === 'Escape' && setShowWicStory(false)} onClick={() => setShowWicStory(false)}>
         <div className="story-sheet" onClick={(event) => event.stopPropagation()}>
